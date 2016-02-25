@@ -22,6 +22,7 @@ namespace TravelNew
     {
         public MainWindow()
         {
+            Console.WriteLine();
             InitializeComponent();
         }
     }
