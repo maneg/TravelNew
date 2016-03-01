@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace TravelNew
 {
+    //true проект
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
@@ -22,7 +23,6 @@ namespace TravelNew
     {
         public MainWindow()
         {
-            Console.WriteLine();
             InitializeComponent();
         }
     }
