@@ -71,8 +71,8 @@
     <Compile Include="ChoiceUser.xaml.cs">
       <DependentUpon>ChoiceUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Find.xaml.cs">
-      <DependentUpon>Find.xaml</DependentUpon>
+    <Compile Include="Finder.xaml.cs">
+      <DependentUpon>Finder.xaml</DependentUpon>
     </Compile>
     <Compile Include="Info.xaml.cs">
       <DependentUpon>Info.xaml</DependentUpon>
@@ -84,7 +84,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Find.xaml">
+    <Page Include="Finder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
