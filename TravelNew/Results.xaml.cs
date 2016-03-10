@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace TravelNew
 {
     /// <summary>
-    /// Логика взаимодействия для Ex.xaml
+    /// Логика взаимодействия для Results.xaml
     /// </summary>
-    public partial class Ex : Window
+    public partial class Results : Window
     {
-        public Ex()
+        public Results()
         {
             InitializeComponent();
         }

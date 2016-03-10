@@ -1,7 +1,7 @@
-﻿<Window x:Class="TravelNew.Ex"
+﻿<Window x:Class="TravelNew.ChoiceUser"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Ex" Height="310" Width="300">
+        Title="ChoiceUser" Height="300" Width="300">
     <Grid>
         
     </Grid>
