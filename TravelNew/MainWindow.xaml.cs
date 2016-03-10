@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.IO;
+using System.Reflection;
 
 namespace TravelNew
 {
@@ -24,6 +26,16 @@ namespace TravelNew
         public MainWindow()
         {
             InitializeComponent();
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader dr;
+        }
+        public void DBpath()
+        {
+            string str = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
+            str = str.Substring(6, str.Length - 15);
+            AppDomain.CurrentDomain.SetData("DataDirectory", str);
+
         }
     }
 }
