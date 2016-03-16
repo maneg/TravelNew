@@ -26,17 +26,8 @@ namespace TravelNew
         public MainWindow()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand();
-            SqlDataReader dr;
         }
-        public void DBpath()
-        {
-            string str = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
-            str = str.Substring(6, str.Length - 15);
-            AppDomain.CurrentDomain.SetData("DataDirectory", str);
-
-        }
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
