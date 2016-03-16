@@ -7,48 +7,48 @@
         <Image x:Name="top" HorizontalAlignment="Left" Height="596" VerticalAlignment="Top" Width="756" Margin="-26,0,-34,0" Source="pict/choiceuser3.jpg"/>
 
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,51,0,0">
-            <RadioButton x:Name="no1" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes1" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no1" Content="Нет" HorizontalAlignment="Left" Margin="106,13,0,4" FontFamily="Cambria" FontSize="20" Checked="no1_Checked"/>
+            <RadioButton x:Name="yes1" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes1_Checked"/>
             <RadioButton x:Name="yn1" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,420,0,0">
-            <RadioButton x:Name="no10" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes10" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no10" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no10_Checked"/>
+            <RadioButton x:Name="yes10" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes10_Checked"/>
             <RadioButton x:Name="yn10" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,379,0,0">
-            <RadioButton x:Name="no9" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes9" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no9" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no9_Checked"/>
+            <RadioButton x:Name="yes9" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes9_Checked"/>
             <RadioButton x:Name="yn9" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,338,0,0">
-            <RadioButton x:Name="no8" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes8" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no8" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no8_Checked"/>
+            <RadioButton x:Name="yes8" Content="Да" HorizontalAlignment="Left" Margin="10,13,0,4" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes8_Checked"/>
             <RadioButton x:Name="yn8" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,297,0,0">
-            <RadioButton x:Name="no7" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes7" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no7" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no7_Checked"/>
+            <RadioButton x:Name="yes7" Content="Да" HorizontalAlignment="Left" Margin="10,13,0,4" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes7_Checked"/>
             <RadioButton x:Name="yn7" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,256,0,0">
-            <RadioButton x:Name="no6" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes6" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no6" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no6_Checked"/>
+            <RadioButton x:Name="yes6" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes6_Checked"/>
             <RadioButton x:Name="yn6" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,215,0,0">
-            <RadioButton x:Name="no5" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes5" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no5" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no5_Checked"/>
+            <RadioButton x:Name="yes5" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes5_Checked"/>
             <RadioButton x:Name="yn5" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,174,0,0">
-            <RadioButton x:Name="no4" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes4" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no4" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no4_Checked"/>
+            <RadioButton x:Name="yes4" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes4_Checked"/>
             <RadioButton x:Name="yn4" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,133,0,0">
-            <RadioButton x:Name="no3" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20"/>
-            <RadioButton x:Name="yes3" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="no3" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no3_Checked"/>
+            <RadioButton x:Name="yes3" Content="Да" HorizontalAlignment="Left" Margin="10,13,0,4" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes3_Checked"/>
             <RadioButton x:Name="yn3" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,92,0,0">
@@ -57,9 +57,9 @@
                 <ColumnDefinition Width="81*"/>
                 <ColumnDefinition Width="237*"/>
             </Grid.ColumnDefinitions>
-            <RadioButton x:Name="no2" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,13,0,0" FontFamily="Cambria" FontSize="20" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <RadioButton x:Name="no2" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,13,0,0" FontFamily="Cambria" FontSize="20" Grid.Column="1" Grid.ColumnSpan="2" Checked="no2_Checked"/>
             <RadioButton x:Name="yn2" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,13,0,0" FontFamily="Cambria" FontSize="20" Grid.Column="2"/>
-            <RadioButton x:Name="yes2" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Grid.ColumnSpan="2" Width="45"/>
+            <RadioButton x:Name="yes2" Content="Да" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Grid.ColumnSpan="2" Checked="yes2_Checked" HorizontalAlignment="Left" Width="45"/>
         </Grid>
         <TextBlock x:Name="nature" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,66,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"><Run Text="Заповедник"/></TextBlock>
         <TextBlock x:Name="sea" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Море" VerticalAlignment="Top" Margin="27,107,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>

@@ -48,10 +48,16 @@ namespace TravelNew
             cmd.Connection = con;
             con.Open();
             cmd.CommandText =
-                "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature+
-                "Place.Sea =" + sqlsea + "Place.Mountains =" + sqlmountains + "Place.Resort =" + sqlresort +
-                "Place.skiresort =" + sqlskiresort + "Place.Active =" + sqlactive + "Place.Historical =" + sqlhistorical +
-                "Country.Dangerous =" + sqldangerous + "Country.Exotic =" + sqlexotic + "Country.Visa =" + sqlvisa;
+                "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature +
+                "AND Place.Sea =" + sqlsea +
+                "AND Place.Mountains =" + sqlmountains +
+                "AND Place.Resort =" + sqlresort +
+                "AND Place.Skiresort =" + sqlskiresort +
+                "AND Place.Active =" + sqlactive +
+                "AND Place.Historical =" + sqlhistorical +
+                "AND Country.Dangerous =" + sqldangerous+
+                "AND Country.Exotic =" + sqlexotic +
+                "AND Country.Visa =" + sqlvisa;
 
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
@@ -66,15 +72,16 @@ namespace TravelNew
             res.ShowDialog();
         }
 
-        private void yes1_Checked(object sender, RoutedEventArgs e)
+        
+
+        public void DBPath()
         {
-            sqlnature = "1";
+            string str = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
+            str = str.Substring(6, str.Length - 15);
+            AppDomain.CurrentDomain.SetData("DataDirectory", str);
         }
 
-        private void no1_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlnature = "0";
-        }
+        
 
         private void yes2_Checked(object sender, RoutedEventArgs e)
         {
@@ -108,32 +115,32 @@ namespace TravelNew
 
         private void yes5_Checked(object sender, RoutedEventArgs e)
         {
-            sqlskiresort = "1";
+            sqlhistorical = "1";
         }
 
         private void no5_Checked(object sender, RoutedEventArgs e)
         {
-            sqlskiresort = "0";
+            sqlhistorical = "0";
         }
 
         private void yes6_Checked(object sender, RoutedEventArgs e)
         {
-            sqlactive = "1";
+            sqlskiresort = "1";
         }
 
         private void no6_Checked(object sender, RoutedEventArgs e)
         {
-            sqlactive = "0";
+            sqlskiresort = "0";
         }
 
         private void yes7_Checked(object sender, RoutedEventArgs e)
         {
-            sqlhistorical = "1";
+            sqlactive = "1";
         }
 
         private void no7_Checked(object sender, RoutedEventArgs e)
         {
-            sqlhistorical = "0";
+            sqlactive = "0";
         }
 
         private void yes8_Checked(object sender, RoutedEventArgs e)
@@ -166,11 +173,16 @@ namespace TravelNew
             sqlvisa = "0";
         }
 
-        public void DBPath()
+        private void yes1_Checked(object sender, RoutedEventArgs e)
         {
-            string str = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
-            str = str.Substring(6, str.Length - 15);
-            AppDomain.CurrentDomain.SetData("DataDirectory", str);
+            sqlnature = "1";
         }
+
+        private void no1_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlnature = "0";
+        }
+
+        
     }
 }
