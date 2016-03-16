@@ -15,13 +15,19 @@ using System.Windows.Shapes;
 namespace TravelNew
 {
     /// <summary>
-    /// Логика взаимодействия для Finder.xaml
+    /// Логика взаимодействия для Find.xaml
     /// </summary>
-    public partial class Finder : Window
+    public partial class Find : Window
     {
-        public Finder()
+        public Find()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Info inf2 = new Info();
+            inf2.ShowDialog();
         }
     }
 }

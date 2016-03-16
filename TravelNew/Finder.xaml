@@ -1,8 +1,41 @@
-﻿<Window x:Class="TravelNew.Finder"
+﻿<Window x:Class="TravelNew.Find"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Finder" Height="300" Width="300">
-    <Grid>
-        
+        Title="Find" Height="188" Width="247">
+    <Grid Margin="0,0,2,-5">
+        <Image x:Name="top" HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="240" Source="pict/bot.jpg" Opacity="0.8"/>
+        <ComboBox x:Name="country" HorizontalAlignment="Left" VerticalAlignment="Top" Width="217" Margin="10,30,0,0" Height="26" BorderBrush="#FFFF7E7E" Opacity="0.7">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Button x:Name="search" Content="Найти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="61,119,0,0" Height="26" FontSize="18" FontFamily="Cambria" BorderBrush="#FF979797" Opacity="0.9" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="title_country" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберите страну" VerticalAlignment="Top" Margin="10,3,0,0" FontSize="18" FontFamily="Cambria" FontStyle="Italic"/>
+        <TextBlock x:Name="title_place" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберите место" VerticalAlignment="Top" Margin="10,59,0,0" FontSize="18" FontFamily="Cambria" FontStyle="Italic"/>
+        <ComboBox x:Name="place" HorizontalAlignment="Left" VerticalAlignment="Top" Width="217" Margin="10,85,0,0" Height="26" BorderBrush="#FFFF7E7E" Opacity="0.7">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
     </Grid>
 </Window>

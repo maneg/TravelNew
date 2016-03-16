@@ -3,17 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Info" Height="500" Width="600">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="258" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="338" Margin="226,178,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Погода в столице:" VerticalAlignment="Top" Margin="10,180,0,0" FontSize="20" FontFamily="Cambria"/>
-        <TextBox HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Margin="176,178,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="НАЗВАНИЕ МЕСТА" VerticalAlignment="Top" Margin="27,21,0,0" Height="72" Width="476" FontSize="48" FontFamily="Cambria"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="название страны" VerticalAlignment="Top" Margin="48,80,0,0" FontFamily="Cambria" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Столица:" VerticalAlignment="Top" Margin="48,108,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="название столицы" VerticalAlignment="Top" Margin="135,108,0,0" FontSize="20" FontFamily="Cambria"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Погода в данном месте:" VerticalAlignment="Top" Margin="10,223,0,0" FontSize="20" FontFamily="Cambria" Height="43" Width="162"/>
-        <TextBox HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Margin="176,226,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Погода в Москве:" VerticalAlignment="Top" Margin="10,279,0,0" FontSize="20" FontFamily="Cambria"/>
-        <TextBox HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Margin="176,276,0,0"/>
+        <TextBox x:Name="information" HorizontalAlignment="Left" Height="258" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="338" Margin="226,178,0,0"/>
+        <TextBlock x:Name="weathertext" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Погода в столице:" VerticalAlignment="Top" Margin="10,180,0,0" FontSize="20" FontFamily="Cambria"/>
+        <TextBox x:Name="weath_capital" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Margin="176,178,0,0"/>
+        <TextBlock x:Name="place" HorizontalAlignment="Left" TextWrapping="Wrap" Text="НАЗВАНИЕ МЕСТА" VerticalAlignment="Top" Margin="27,21,0,0" Height="72" Width="476" FontSize="48" FontFamily="Cambria"/>
+        <TextBlock x:Name="country" HorizontalAlignment="Left" TextWrapping="Wrap" Text="название страны" VerticalAlignment="Top" Margin="48,80,0,0" FontFamily="Cambria" FontSize="24"/>
+        <TextBlock x:Name="textcapital" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Столица:" VerticalAlignment="Top" Margin="48,108,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
+        <TextBlock x:Name="capital" HorizontalAlignment="Left" TextWrapping="Wrap" Text="название столицы" VerticalAlignment="Top" Margin="135,108,0,0" FontSize="20" FontFamily="Cambria"/>
+        <TextBlock x:Name="weathertext2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Погода в данном месте:" VerticalAlignment="Top" Margin="10,223,0,0" FontSize="20" FontFamily="Cambria" Height="43" Width="162"/>
+        <TextBox x:Name="weath_place" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Margin="176,226,0,0"/>
+        <TextBlock x:Name="weathertext3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Погода в Москве:" VerticalAlignment="Top" Margin="10,279,0,0" FontSize="20" FontFamily="Cambria"/>
+        <TextBox x:Name="weath_Moscow" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Margin="176,276,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Валюта:" VerticalAlignment="Top" Margin="10,331,0,0" FontSize="20" FontFamily="Cambria"/>
+        <TextBox HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" Margin="88,327,0,0"/>
 
     </Grid>
 </Window>

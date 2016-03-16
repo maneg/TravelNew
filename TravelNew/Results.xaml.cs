@@ -23,5 +23,11 @@ namespace TravelNew
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Info inf = new Info();
+            inf.ShowDialog();
+        }
     }
 }

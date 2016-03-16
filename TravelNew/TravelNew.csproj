@@ -139,6 +139,7 @@
   <ItemGroup>
     <Resource Include="pict\title.jpg" />
     <Resource Include="pict\choiceuser3.jpg" />
+    <Resource Include="pict\bot.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
