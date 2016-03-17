@@ -31,16 +31,16 @@ namespace TravelNew
             InitializeComponent();
         }
 
-        string sqlnature;
-        string sqlsea;
-        string sqlmountains;
-        string sqlresort;
-        string sqlskiresort;
-        string sqlactive;
-        string sqlhistorical;
-        string sqldangerous;
-        string sqlexotic;
-        string sqlvisa;
+        string sqlnature,
+            sqlsea,
+            sqlmountains,
+            sqlresort,
+            sqlskiresort,
+            sqlactive,
+            sqlhistorical,
+            sqldangerous,
+            sqlexotic,
+            sqlvisa;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
