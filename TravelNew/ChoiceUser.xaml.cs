@@ -31,16 +31,16 @@ namespace TravelNew
             InitializeComponent();
         }
 
-        string sqlnature;
-        string sqlsea;
-        string sqlmountains;
-        string sqlresort;
-        string sqlskiresort;
-        string sqlactive;
-        string sqlhistorical;
-        string sqldangerous;
-        string sqlexotic;
-        string sqlvisa;
+        string sqlnature, 
+               sqlsea, 
+               sqlmountains, 
+               sqlresort, 
+               sqlskiresort, 
+               sqlactive, 
+               sqlhistorical,
+               sqldangerous,
+               sqlexotic,
+               sqlvisa;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -48,7 +48,7 @@ namespace TravelNew
             cmd.Connection = con;
             con.Open();
             cmd.CommandText =
-                "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature +
+            "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature +
             "AND Place.Sea =" + sqlsea +
             "AND Place.Mountains =" + sqlmountains +
             "AND Place.Resort =" + sqlresort +
