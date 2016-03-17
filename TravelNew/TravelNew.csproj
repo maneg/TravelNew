@@ -153,6 +153,14 @@
     <Resource Include="pict\title1.jpg" />
     <Resource Include="pict\choiceuser.jpg" />
     <Resource Include="pict\ch.jpg" />
+    <Resource Include="places\1.jpg" />
+    <Resource Include="places\2.jpg" />
+    <Resource Include="places\3.jpg" />
+    <Resource Include="places\4.jpg" />
+    <Resource Include="places\5.jpg" />
+    <Resource Include="places\6.jpg" />
+    <Resource Include="places\7.jpg" />
+    <Resource Include="places\8.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

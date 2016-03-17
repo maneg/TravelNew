@@ -12,6 +12,7 @@ namespace TravelNew
     public static class InfoPlace
     {
         public static object a;
+        public static int idcountry;
         public static int id;
         public static string placename;
         public static string country;
@@ -20,6 +21,7 @@ namespace TravelNew
         public static string info_visa;
         public static string info;
         public static string city;
+        public static string currency_foreign;
         public static List<ChosenP> cparray = new List<ChosenP>();
 
         public static void SelectingInfo(object a)
@@ -47,7 +49,6 @@ namespace TravelNew
         {
             string APIkey = "219a7c4cc8020ed17e7b0ee8";
 
-            string currency_foreign = "EUR";
             string amount_currency = "1";
             WebClient client = new WebClient();
             var result = client.DownloadString(string.Format("https://www.exchangerate-api.com/{1}/RUB/{2}?k={0}", APIkey, currency_foreign, amount_currency));

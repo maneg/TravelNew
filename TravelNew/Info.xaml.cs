@@ -17,17 +17,25 @@ namespace TravelNew
     /// <summary>
     /// Логика взаимодействия для Info.xaml
     /// </summary>
-    public partial class Info : Window
+    public partial class Info : Window 
+
     {
         public Info()
         {
             
-
+            
             InitializeComponent();
+           
             place.Text = InfoPlace.placename;
             country.Text = InfoPlace.country;
             capital.Text = InfoPlace.capital;
+            information.Text = InfoPlace.info;
             
+            int op = InfoPlace.id;
+            string q = string.Format("/WpfApplication1;component/ert/{0}.jpg", op);
+           // poi.Source = new BitmapImage(new Uri(q, UriKind.RelativeOrAbsolute));
+           
+           
             
         }
     }
