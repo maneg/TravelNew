@@ -14,8 +14,13 @@ namespace TravelNew
         public static object a;
         public static int id;
         public static string placename;
+        public static string country;
+        public static string capital;
+        public static string info_dangerous;
+        public static string info_visa;
         public static string info;
-        public static List<ChosenPl> cparray = new List<ChosenPl>();
+        public static string city;
+        public static List<ChosenP> cparray = new List<ChosenP>();
 
         public static void SelectingInfo(object a)
         {
@@ -25,7 +30,7 @@ namespace TravelNew
         public static void WeatherInfo(out double latitude, out double longitude, out double speed_wind, out double temp, out double pressure, out double himidity)
         {
             string APIkey = "ac7d30fd6cf00ed0254697b3f4698fb6";
-            string city = "Moscow";
+            
             WebClient client = new WebClient();
             var result = client.DownloadString(string.Format("http://api.openweathermap.org/data/2.5/weather?q={1}&units=metric&appid={0}", APIkey, city));
 

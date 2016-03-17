@@ -64,7 +64,7 @@ namespace TravelNew
             {
                 while (dr.Read())
                 {
-                    ChosenPl cp = new ChosenPl(int.Parse(dr[1].ToString()), dr[0].ToString());
+                    ChosenP cp = new ChosenP(int.Parse(dr[1].ToString()), dr[0].ToString());
                     InfoPlace.cparray.Add(cp);
                     res.listresults.Items.Add(dr[0].ToString());
                 }
