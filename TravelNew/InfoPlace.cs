@@ -9,11 +9,9 @@ namespace TravelNew
     public static class InfoPlace
     {
         public static object a;
-        public static int Id;
-        public static string Info;
-        public static string DangerousInfo;
-        public static string Capital;
-        public static string NameCountry;
+        public static int id;
+        public static string placename;
+        public static string info;
 
         public static void SelectingInfo(object a)
         {

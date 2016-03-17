@@ -48,13 +48,14 @@ namespace TravelNew
             cmd.Connection = con;
             con.Open();
             cmd.CommandText =
-            "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature +
+            "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature
+            +
             "AND Place.Sea =" + sqlsea +
             "AND Place.Mountains =" + sqlmountains +
             "AND Place.Resort =" + sqlresort +
             "AND Place.Skiresort =" + sqlskiresort +
             "AND Place.Active =" + sqlactive +
-            "AND Place.Historical =" + sqlhistorical+
+            "AND Place.Historical =" + sqlhistorical +
             "AND Country.Dangerous =" + sqldangerous +
             "AND Country.Exotic =" + sqlexotic +
             "AND Country.Visa =" + sqlvisa;
