@@ -23,18 +23,18 @@ namespace TravelNew
         public static string city;
         public static string currency_foreign;
         public static List<ChosenP> cparray = new List<ChosenP>();
-
+        
         public static void SelectingInfo(object a)
         {
             
         }
 
-        public static void WeatherInfo(out double latitude, out double longitude, out double speed_wind, out double temp, out double pressure, out double himidity)
+        public static void WeatherInfo(string APICity, out double latitude, out double longitude, out double speed_wind, out double temp, out double pressure, out double himidity)
         {
             string APIkey = "ac7d30fd6cf00ed0254697b3f4698fb6";
             
             WebClient client = new WebClient();
-            var result = client.DownloadString(string.Format("http://api.openweathermap.org/data/2.5/weather?q={1}&units=metric&appid={0}", APIkey, city));
+            var result = client.DownloadString(string.Format("http://api.openweathermap.org/data/2.5/weather?q={1}&units=metric&appid={0}", APIkey, APICity));
 
             var data = JsonConvert.DeserializeObject<WeatherData>(result);
             latitude =data.Coordin.Latitude;

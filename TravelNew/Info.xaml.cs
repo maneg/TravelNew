@@ -43,7 +43,10 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            Weather weath = new Weather();
+            weath.ShowDialog();
+
+
         }
     }
 }
