@@ -23,19 +23,26 @@ namespace TravelNew
         public Info()
         {
             
-            
-            InitializeComponent();
            
+            InitializeComponent();
+
+            int op = InfoPlace.id;
+            string q = string.Format("/TravelNew;component/places/{0}.jpg",op);
+            top.Source = new BitmapImage(new Uri(q, UriKind.RelativeOrAbsolute));
+            
             place.Text = InfoPlace.placename;
             country.Text = InfoPlace.country;
             capital.Text = InfoPlace.capital;
             information.Text = InfoPlace.info;
+            dangerous_info.Text = InfoPlace.info_dangerous;
+            visa_info.Text = InfoPlace.info_visa;
+
             
-            int op = InfoPlace.id;
-            string q = string.Format("/WpfApplication1;component/ert/{0}.jpg", op);
-           // poi.Source = new BitmapImage(new Uri(q, UriKind.RelativeOrAbsolute));
-           
-           
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             
         }
     }

@@ -74,6 +74,7 @@ namespace TravelNew
 
             con.Close();
             Info inf = new Info();
+            
             inf.ShowDialog();
         }
     }

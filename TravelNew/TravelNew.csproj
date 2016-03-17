@@ -90,6 +90,9 @@
     <Compile Include="Results.xaml.cs">
       <DependentUpon>Results.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Weather.xaml.cs">
+      <DependentUpon>Weather.xaml</DependentUpon>
+    </Compile>
     <Page Include="ChoiceUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +118,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Results.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Weather.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,6 +168,43 @@
     <Resource Include="places\6.jpg" />
     <Resource Include="places\7.jpg" />
     <Resource Include="places\8.jpg" />
+    <Resource Include="places\10.jpg" />
+    <Resource Include="places\11.jpg" />
+    <Resource Include="places\12.jpg" />
+    <Resource Include="places\13.jpg" />
+    <Resource Include="places\14.jpg" />
+    <Resource Include="places\15.jpg" />
+    <Resource Include="places\16.jpg" />
+    <Resource Include="places\17.jpg" />
+    <Resource Include="places\18.jpg" />
+    <Resource Include="places\19.jpg" />
+    <Resource Include="places\20.jpg" />
+    <Resource Include="places\21.jpg" />
+    <Resource Include="places\22.jpg" />
+    <Resource Include="places\23.jpg" />
+    <Resource Include="places\24.jpg" />
+    <Resource Include="places\25.jpg" />
+    <Resource Include="places\9.jpg" />
+    <Resource Include="places\26.jpg" />
+    <Resource Include="places\27.jpg" />
+    <Resource Include="places\28.jpg" />
+    <Resource Include="places\29.jpg" />
+    <Resource Include="places\30.jpg" />
+    <Resource Include="places\31.jpg" />
+    <Resource Include="places\32.jpg" />
+    <Resource Include="places\33.jpg" />
+    <Resource Include="places\34.jpg" />
+    <Resource Include="places\35.jpg" />
+    <Resource Include="places\36.jpg" />
+    <Resource Include="places\37.jpg" />
+    <Resource Include="places\38.jpg" />
+    <Resource Include="places\39.jpg" />
+    <Resource Include="places\40.jpg" />
+    <Resource Include="places\41.jpg" />
+    <Resource Include="places\42.jpg" />
+    <Resource Include="places\43.jpg" />
+    <Resource Include="places\44.jpg" />
+    <Resource Include="pict\weather.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
