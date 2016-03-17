@@ -2,10 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="TravelNew.ChoiceUser"
-        Title="ChoiceUser" Height="624" Width="702" ResizeMode="NoResize">
-    <Grid>
+        Title="ChoiceUser" Height="667.5" Width="756" ResizeMode="NoResize">
+    <Grid Margin="0,0,-6,-18">
 
-        <Image x:Name="top" HorizontalAlignment="Left" Height="596" VerticalAlignment="Top" Width="756" Margin="-26,0,-34,0" Source="pict/choiceuser3.jpg" d:IsHidden="True"/>
+        <Image x:Name="top" HorizontalAlignment="Left" Height="648" VerticalAlignment="Top" Width="747" Source="pict/ch.jpg"/>
 
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,51,0,0">
             <RadioButton x:Name="no1" Content="Нет" HorizontalAlignment="Left" Margin="106,13,0,4" FontFamily="Cambria" FontSize="20" Checked="no1_Checked"/>
@@ -73,7 +73,7 @@
         <TextBlock x:Name="exot" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Экзотическая страна" VerticalAlignment="Top" Margin="27,394,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
         <TextBlock x:Name="visa" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Собираетесь ли вы делать визу?" VerticalAlignment="Top" Margin="22,435,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
         <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="На сколько дней вы едете?" VerticalAlignment="Top" Margin="27,476,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="title" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберете критерии поиска места для отдыха." VerticalAlignment="Top" Margin="21,11,0,0" FontFamily="Cambria" FontSize="24" Width="669"/>
+        <TextBlock x:Name="title" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="21,11,0,0" FontFamily="Cambria" FontSize="36" Width="725" FontWeight="Bold" Foreground="#FFC1343A"><Run FontSize="30" Text="Выберете критерии поиска места для отдыха"/><Run Text="."/></TextBlock>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,461,0,0">
             <TextBox x:Name="infotext" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Margin="0,9,0,0" Text="0"/>
             <TextBlock x:Name="info" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Введите целое число. Если не имеет значения, то введите 0" VerticalAlignment="Top" Margin="191,-4,-4,-13" FontFamily="Cambria" FontSize="16" FontStyle="Italic"/>
@@ -86,7 +86,7 @@
                 <ComboBoxItem Content="Азия" HorizontalAlignment="Left" Width="179"/>
             </ComboBox>
         </Grid>
-        <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="129" Margin="530,10,0,0" Height="29" FontSize="18" FontFamily="Cambria" Click="Button_Click">
+        <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="495,555,0,0" Height="37" FontSize="22" FontFamily="Constantia" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>

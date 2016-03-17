@@ -11,7 +11,7 @@
             <ColumnDefinition Width="264*"/>
         </Grid.ColumnDefinitions>
 
-        <Image HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="600" Grid.ColumnSpan="4" Source="pict/title.jpg" Margin="0,-12,0,-13"/>
+        <Image HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="600" Grid.ColumnSpan="4" Source="pict/title1.jpg" Margin="0,-12,0,-13"/>
         <Button x:Name="choose" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="253" Margin="0,257,0,0" Height="58" Grid.Column="3" Opacity="0.1" Click="Button_Click_1"/>
         <Button x:Name="question" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Grid.Column="2" Margin="100,312,0,0" Height="40" Opacity="0.1" Click="Button_Click_2"/>
         <Button x:Name="information" Content="" VerticalAlignment="Top" Margin="14,257,66,0" Grid.ColumnSpan="3" Height="58" Click="Button_Click" Opacity="0.1"/>

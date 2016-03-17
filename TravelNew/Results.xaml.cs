@@ -33,7 +33,7 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Info inf = new Info();
+            
             int selectedindex = listresults.SelectedIndex;
             int selectedid = InfoPlace.cparray[selectedindex].Id;
 
@@ -47,11 +47,15 @@ namespace TravelNew
             {
                 while (dr.Read())
                 {
-                    inf.information.Text = dr[10].ToString();
+                    InfoPlace.placename = dr[1].ToString();
+                    InfoPlace.info=dr[10].ToString();
+                    InfoPlace.id=int.Parse(dr[0].ToString());
                 }
             }
-            con.Close();
 
+
+            con.Close();
+            Info inf = new Info();
             inf.ShowDialog();
         }
     }

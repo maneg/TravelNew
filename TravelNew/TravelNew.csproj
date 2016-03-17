@@ -148,10 +148,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="pict\title.jpg" />
-    <Resource Include="pict\choiceuser3.jpg" />
     <Resource Include="pict\bot.jpg" />
     <Resource Include="pict\result.jpg" />
+    <Resource Include="pict\title1.jpg" />
+    <Resource Include="pict\choiceuser.jpg" />
+    <Resource Include="pict\ch.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

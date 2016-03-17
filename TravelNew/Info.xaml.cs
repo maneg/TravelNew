@@ -21,7 +21,14 @@ namespace TravelNew
     {
         public Info()
         {
+            
+
             InitializeComponent();
+            place.Text = InfoPlace.placename;
+            country.Text = InfoPlace.country;
+            capital.Text = InfoPlace.capital;
+            
+            
         }
     }
 }
