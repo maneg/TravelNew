@@ -48,22 +48,24 @@ namespace TravelNew
             cmd.Connection = con;
             con.Open();
             cmd.CommandText =
-                "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature +
-            "AND Place.Sea =" + sqlsea +
-            "AND Place.Mountains =" + sqlmountains +
-            "AND Place.Resort =" + sqlresort +
-            "AND Place.Skiresort =" + sqlskiresort +
-            "AND Place.Active =" + sqlactive +
-            "AND Place.Historical =" + sqlhistorical+
-            "AND Country.Dangerous =" + sqldangerous +
-            "AND Country.Exotic =" + sqlexotic +
-            "AND Country.Visa =" + sqlvisa;
+                "SELECT Place.Name, Place.IdPlace FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature;
+            //"AND Place.Sea =" + sqlsea +
+            //"AND Place.Mountains =" + sqlmountains +
+            //"AND Place.Resort =" + sqlresort +
+            //"AND Place.Skiresort =" + sqlskiresort +
+            //"AND Place.Active =" + sqlactive +
+            //"AND Place.Historical =" + sqlhistorical+
+            //"AND Country.Dangerous =" + sqldangerous +
+            //"AND Country.Exotic =" + sqlexotic +
+            //"AND Country.Visa =" + sqlvisa;
 
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
                 while (dr.Read())
                 {
+                    ChosenPl cp = new ChosenPl(int.Parse(dr[1].ToString()), dr[0].ToString());
+                    InfoPlace.cparray.Add(cp);
                     res.listresults.Items.Add(dr[0].ToString());
                 }
             }

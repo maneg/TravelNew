@@ -15,6 +15,7 @@ namespace TravelNew
         public static int id;
         public static string placename;
         public static string info;
+        public static List<ChosenPl> cparray = new List<ChosenPl>();
 
         public static void SelectingInfo(object a)
         {

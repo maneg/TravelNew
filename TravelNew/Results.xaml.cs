@@ -34,24 +34,24 @@ namespace TravelNew
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Info inf = new Info();
-            object item_select = listresults.SelectedItem;
-            InfoPlace.a = item_select;
+            int selectedindex = listresults.SelectedIndex;
+            int selectedid = InfoPlace.cparray[selectedindex].Id;
 
 
             cmd.Connection = con;
             con.Open();
             cmd.CommandText =
-            "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Name =" + item_select.ToString();
+            "SELECT * FROM Place WHERE Place.idplace =" + selectedid;
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
                 while (dr.Read())
                 {
-                    inf.information.Text = dr[0].ToString();
+                    inf.information.Text = dr[10].ToString();
                 }
             }
+            con.Close();
 
-            inf.information.Text = InfoPlace.info;
             inf.ShowDialog();
         }
     }
