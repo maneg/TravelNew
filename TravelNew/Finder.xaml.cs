@@ -26,6 +26,7 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            list
             Info inf2 = new Info();
             inf2.ShowDialog();
         }

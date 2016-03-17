@@ -49,22 +49,22 @@ namespace TravelNew
             con.Open();
             cmd.CommandText =
                 "SELECT Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature +
-                "AND Place.Sea =" + sqlsea +
-                "AND Place.Mountains =" + sqlmountains +
-                "AND Place.Resort =" + sqlresort +
-                "AND Place.Skiresort =" + sqlskiresort +
-                "AND Place.Active =" + sqlactive +
-                "AND Place.Historical =" + sqlhistorical +
-                "AND Country.Dangerous =" + sqldangerous+
-                "AND Country.Exotic =" + sqlexotic +
-                "AND Country.Visa =" + sqlvisa;
+            "AND Place.Sea =" + sqlsea +
+            "AND Place.Mountains =" + sqlmountains +
+            "AND Place.Resort =" + sqlresort +
+            "AND Place.Skiresort =" + sqlskiresort +
+            "AND Place.Active =" + sqlactive +
+            "AND Place.Historical =" + sqlhistorical+
+            "AND Country.Dangerous =" + sqldangerous +
+            "AND Country.Exotic =" + sqlexotic +
+            "AND Country.Visa =" + sqlvisa;
 
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
                 while (dr.Read())
                 {
-                    res.list.Items.Add(dr[0].ToString());
+                    res.listresults.Items.Add(dr[0].ToString());
                 }
             }
 

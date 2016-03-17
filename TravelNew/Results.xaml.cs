@@ -26,6 +26,11 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            object item_select =listresults.SelectedItem;
+            InfoPlace.a = item_select;
+
+            
+
             Info inf = new Info();
             inf.ShowDialog();
         }
