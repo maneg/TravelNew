@@ -36,6 +36,18 @@ namespace TravelNew
             pressure= data.Main.Pressure;
             himidity = data.Main.Humidity;
         }
+
+        public static void CurrencyInfo()
+        {
+            string APIkey = "219a7c4cc8020ed17e7b0ee8";
+
+            string currency_foreign = "EUR";
+            string amount_currency = "1";
+            WebClient client = new WebClient();
+            var result = client.DownloadString(string.Format("https://www.exchangerate-api.com/{1}/RUB/{2}?k={0}", APIkey, currency_foreign, amount_currency));
+            
+            
+        }
         
     }
 }
