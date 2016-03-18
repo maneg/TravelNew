@@ -22,7 +22,9 @@ namespace TravelNew
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr, dr1, drplace, drcountry;
+        SqlDataReader dr;
+
+        ShowQuery sq = new ShowQuery();
 
         public Find()
         {
@@ -32,13 +34,13 @@ namespace TravelNew
             con.Open();
             cmd.CommandText = "SELECT Country.IdCountry, Country.CountryName FROM Country";
 
-            dr1 = cmd.ExecuteReader();
-            if (dr1.HasRows)
+            dr = cmd.ExecuteReader();
+            if (dr.HasRows)
             {
-                while (dr1.Read())
+                while (dr.Read())
                 {
-                    InfoPlace.ccarray.Add(new ChosenP(int.Parse(dr1[0].ToString()), dr1[1].ToString()));
-                    country.Items.Add(dr1[1].ToString());
+                    InfoPlace.ccarray.Add(new ChosenP(int.Parse(dr[0].ToString()), dr[1].ToString()));
+                    country.Items.Add(dr[1].ToString());
                 }
             }
             con.Close();
@@ -46,44 +48,16 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int selectedindex = place.SelectedIndex;
-            int selectedid = InfoPlace.cparray[selectedindex].Id;
-            cmd.Connection = con;
-            con.Open();
-            cmd.CommandText =
-            "SELECT * FROM Place WHERE Place.Idplace =" + selectedid;
-            drplace = cmd.ExecuteReader();
-            if (drplace.HasRows)
+            if (place.SelectedIndex == 1)
             {
-                while (drplace.Read())
-                {
-                    InfoPlace.placename = drplace[1].ToString();
-                    InfoPlace.info = drplace[10].ToString();
-                    InfoPlace.id = int.Parse(drplace[0].ToString());
-                    InfoPlace.idcountry = int.Parse(drplace[2].ToString());
-                }
+                int selectedindex = place.SelectedIndex;
+                int selectedid = InfoPlace.cparray[selectedindex].Id;
+                sq.ShowPlace(selectedid);
             }
-            con.Close();
-
-            cmd.Connection = con;
-            con.Open();
-            cmd.CommandText =
-            "SELECT * FROM Country WHERE Country.IdCountry =" + InfoPlace.idcountry;
-            drcountry = cmd.ExecuteReader();
-            if (drcountry.HasRows)
+            else
             {
-                while (drcountry.Read())
-                {
-                    InfoPlace.info_dangerous = drcountry[4].ToString();
-                    InfoPlace.capital = drcountry[2].ToString();
-                    InfoPlace.country = drcountry[1].ToString();
-                    InfoPlace.info_visa = drcountry[10].ToString();
-                    InfoPlace.currency_foreign = drcountry[8].ToString();
-                }
+                MessageBox.Show("Выберите место!");
             }
-            con.Close();
-            Info inf = new Info();
-            inf.ShowDialog();
         }
 
         private void country_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -96,7 +70,7 @@ namespace TravelNew
             place.Items.Clear();
             con.Open();
             cmd.CommandText =
-            "SELECT place.idplace,Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Country.idcountry =" + selectedid;
+            "SELECT Place.Idplace,Place.Name FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Country.Idcountry =" + selectedid;
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {

@@ -26,39 +26,43 @@ namespace TravelNew
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
 
+
         public ChoiceUser()
         {
             InitializeComponent();
         }
 
         string sqlnature,
-            sqlsea,
-            sqlmountains,
-            sqlresort,
-            sqlskiresort,
-            sqlactive,
-            sqlhistorical,
-            sqldangerous,
-            sqlexotic,
-            sqlvisa;
+               sqlsea,
+               sqlmountains,
+               sqlresort,
+               sqlskiresort,
+               sqlactive,
+               sqlhistorical,
+               sqldangerous,
+               sqlexotic,
+               sqlvisa;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            InfoPlace.cparray.Clear();
             Results res = new Results();
+            InfoPlace.cparray.Clear();
+
             cmd.Connection = con;
             con.Open();
-            cmd.CommandText =
-                "SELECT Place.Name, Place.IdPlace FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature;
-            //"AND Place.Sea =" + sqlsea +
-            //"AND Place.Mountains =" + sqlmountains +
-            //"AND Place.Resort =" + sqlresort +
-            //"AND Place.Skiresort =" + sqlskiresort +
-            //"AND Place.Active =" + sqlactive +
-            //"AND Place.Historical =" + sqlhistorical+
-            //"AND Country.Dangerous =" + sqldangerous +
-            //"AND Country.Exotic =" + sqlexotic +
-            //"AND Country.Visa =" + sqlvisa;
+            cmd.CommandText = "SELECT Place.Name, Place.IdPlace FROM Place JOIN Country ON Country.Idcountry = Place.Idcountry WHERE Place.Nature =" + sqlnature;
+                //"AND Place.Sea =" + sqlsea +
+                //"AND Place.Mountains =" + sqlmountains +
+                //"AND Place.Resort =" + sqlresort +
+                //"AND Place.Skiresort =" + sqlskiresort +
+                //"AND Place.Active =" + sqlactive +
+                //"AND Place.Historical =" + sqlhistorical +
+                //"AND Country.Dangerous =" + sqldangerous +
+                //"AND Country.Exotic =" + sqlexotic;
+
+
+
+                //"AND DATALENGTH(Country.Visa) = 2 "+ sqlvisa;
 
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
@@ -76,8 +80,6 @@ namespace TravelNew
             res.ShowDialog();
         }
 
-        
-
         public void DBPath()
         {
             string str = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
@@ -85,76 +87,6 @@ namespace TravelNew
             AppDomain.CurrentDomain.SetData("DataDirectory", str);
         }
         
-        private void yes4_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlresort = "1";
-        }
-
-        private void no4_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlresort = "0";
-        }
-
-        private void yes5_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlhistorical = "1";
-        }
-
-        private void no5_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlhistorical = "0";
-        }
-
-        private void yes6_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlskiresort = "1";
-        }
-
-        private void no6_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlskiresort = "0";
-        }
-
-        private void yes7_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlactive = "1";
-        }
-
-        private void no7_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlactive = "0";
-        }
-
-        private void yes8_Checked(object sender, RoutedEventArgs e)
-        {
-            sqldangerous = "1";
-        }
-
-        private void no8_Checked(object sender, RoutedEventArgs e)
-        {
-            sqldangerous = "0";
-        }
-
-        private void yes9_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlexotic = "1";
-        }
-
-        private void no9_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlexotic = "0";
-        }
-
-        private void yes10_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlvisa = "1";
-        }
-
-        private void no10_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlvisa = "0";
-        }
-
         private void yes1_Checked(object sender, RoutedEventArgs e)
         {
             sqlnature = "1";
@@ -200,35 +132,112 @@ namespace TravelNew
             sqlmountains = "1 OR Place.Mountains = 0";
         }
 
+        private void yes4_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlresort = "1";
+        }
+
+        private void no4_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlresort = "0";
+        }
+
         private void yn4_Checked(object sender, RoutedEventArgs e)
         {
+            sqlresort = "1 OR Place.Resort = 0";
+        }
 
+        private void yes5_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlhistorical = "1";
+        }
+
+        private void no5_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlhistorical = "0";
+        }
+
+        private void yn5_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlhistorical = "1 OR Place.Historical = 0";
+        }
+
+        private void yes6_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlskiresort = "1";
+        }
+
+        private void no6_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlskiresort = "0";
         }
 
         private void yn6_Checked(object sender, RoutedEventArgs e)
         {
+            sqlskiresort = "1 OR Place.Skiresort = 0";
+        }
 
+        private void yes7_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlactive = "1";
+        }
+
+        private void no7_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlactive = "0";
         }
 
         private void yn7_Checked(object sender, RoutedEventArgs e)
         {
+            sqlactive = "1 OR Place.Active = 0";
+        }
 
+        private void yes8_Checked(object sender, RoutedEventArgs e)
+        {
+            sqldangerous = "1";
+        }
+
+        private void no8_Checked(object sender, RoutedEventArgs e)
+        {
+            sqldangerous = "0";
         }
 
         private void yn8_Checked(object sender, RoutedEventArgs e)
         {
+            sqldangerous = "1 OR Country.Dangerous = 0";
+        }
 
+        private void yes9_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlexotic = "1";
+        }
+
+        private void no9_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlexotic = "0";
         }
 
         private void yn9_Checked(object sender, RoutedEventArgs e)
         {
+            sqlexotic = "1 OR Country.Exotic = 0";
+        }
 
+        private void yes10_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlvisa = "LENGTH(Country.Visa) = 1 OR 2 OR 3";
+        }
+
+        private void no10_Checked(object sender, RoutedEventArgs e)
+        {
+            
+                      
         }
 
         private void yn10_Checked(object sender, RoutedEventArgs e)
         {
-
+            sqlvisa = "LENGTH(Country.Visa) = 1 OR 2 OR 3";
         }
+
 
         
     }

@@ -40,7 +40,7 @@
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,215,0,0">
             <RadioButton x:Name="no5" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no5_Checked"/>
             <RadioButton x:Name="yes5" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes5_Checked"/>
-            <RadioButton x:Name="yn5" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20"/>
+            <RadioButton x:Name="yn5" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20" Checked="yn5_Checked"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,174,0,0">
             <RadioButton x:Name="no4" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no4_Checked"/>

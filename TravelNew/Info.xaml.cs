@@ -22,8 +22,6 @@ namespace TravelNew
     {
         public Info()
         {
-            
-           
             InitializeComponent();
 
             int op = InfoPlace.id;
@@ -37,16 +35,12 @@ namespace TravelNew
             dangerous_info.Text = InfoPlace.info_dangerous;
             visa_info.Text = InfoPlace.info_visa;
 
-            
-            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Weather weath = new Weather();
             weath.ShowDialog();
-
-
         }
     }
 }
