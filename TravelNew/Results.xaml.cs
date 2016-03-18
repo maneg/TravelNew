@@ -24,7 +24,7 @@ namespace TravelNew
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr, dr2;
+        SqlDataReader drplace, drcountry;
 
         public Results()
         {
@@ -33,24 +33,22 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
             int selectedindex = listresults.SelectedIndex;
             int selectedid = InfoPlace.cparray[selectedindex].Id;
-
 
             cmd.Connection = con;
             con.Open();
             cmd.CommandText =
-            "SELECT * FROM Place WHERE Place.idplace =" + selectedid;
-            dr = cmd.ExecuteReader();
-            if (dr.HasRows)
+            "SELECT * FROM Place WHERE Place.Idplace =" + selectedid;
+            drplace = cmd.ExecuteReader();
+            if (drplace.HasRows)
             {
-                while (dr.Read())
+                while (drplace.Read())
                 {
-                    InfoPlace.placename = dr[1].ToString();
-                    InfoPlace.info=dr[10].ToString();
-                    InfoPlace.id=int.Parse(dr[0].ToString());
-                    InfoPlace.idcountry = int.Parse(dr[2].ToString());
+                    InfoPlace.placename = drplace[1].ToString();
+                    InfoPlace.info = drplace[10].ToString();
+                    InfoPlace.id = int.Parse(drplace[0].ToString());
+                    InfoPlace.idcountry = int.Parse(drplace[2].ToString());
                 }
             }
             con.Close();
@@ -59,22 +57,21 @@ namespace TravelNew
             con.Open();
             cmd.CommandText =
             "SELECT * FROM Country WHERE Country.IdCountry =" + InfoPlace.idcountry;
-            dr2 = cmd.ExecuteReader();
-            if (dr2.HasRows)
+            drcountry = cmd.ExecuteReader();
+            if (drcountry.HasRows)
             {
-                while (dr2.Read())
+                while (drcountry.Read())
                 {
-                    InfoPlace.info_dangerous = dr2[4].ToString();
-                    InfoPlace.capital = dr2[2].ToString();
-                    InfoPlace.country = dr2[1].ToString();
-                    InfoPlace.info_visa = dr2[10].ToString();
-                    InfoPlace.currency_foreign=dr2[8].ToString();
+                    InfoPlace.info_dangerous = drcountry[4].ToString();
+                    InfoPlace.capital = drcountry[2].ToString();
+                    InfoPlace.country = drcountry[1].ToString();
+                    InfoPlace.info_visa = drcountry[10].ToString();
+                    InfoPlace.currency_foreign = drcountry[8].ToString();
                 }
             }
-
             con.Close();
+
             Info inf = new Info();
-            
             inf.ShowDialog();
         }
     }

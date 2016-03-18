@@ -68,10 +68,8 @@ namespace TravelNew
                     ChosenP cp = new ChosenP(int.Parse(dr[1].ToString()), dr[0].ToString());
                     InfoPlace.cparray.Add(cp);
                     res.listresults.Items.Add(dr[0].ToString());
-                    
                 }
 
-                
             }
             res.amount.Text = res.listresults.Items.Count.ToString();
             con.Close();
@@ -86,29 +84,7 @@ namespace TravelNew
             str = str.Substring(6, str.Length - 15);
             AppDomain.CurrentDomain.SetData("DataDirectory", str);
         }
-
         
-
-        private void yes2_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlsea = "1";
-        }
-
-        private void no2_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlsea = "0";
-        }
-
-        private void yes3_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlmountains = "1";
-        }
-
-        private void no3_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlmountains = "0";
-        }
-
         private void yes4_Checked(object sender, RoutedEventArgs e)
         {
             sqlresort = "1";
@@ -187,6 +163,71 @@ namespace TravelNew
         private void no1_Checked(object sender, RoutedEventArgs e)
         {
             sqlnature = "0";
+        }
+
+        private void yn1_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlnature = "1 OR Place.Nature = 0";
+        }
+
+        private void yes2_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlsea = "1";
+        }
+
+        private void no2_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlsea = "0";
+        }
+
+        private void yn2_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlsea = "1 OR Place.Sea = 0";
+        }
+
+        private void yes3_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlmountains = "1";
+        }
+
+        private void no3_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlmountains = "0";
+        }
+
+        private void yn3_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlmountains = "1 OR Place.Mountains = 0";
+        }
+
+        private void yn4_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void yn6_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void yn7_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void yn8_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void yn9_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void yn10_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
 
         

@@ -5,7 +5,7 @@
         Title="Find" Height="188" Width="247" ResizeMode="NoResize">
     <Grid Margin="0,0,2,-5">
         <Image x:Name="top" HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="240" Source="pict/bot.jpg" Opacity="0.8" d:IsHidden="True"/>
-        <ComboBox x:Name="country" HorizontalAlignment="Left" VerticalAlignment="Top" Width="217" Margin="10,30,0,0" Height="26" BorderBrush="#FFFF7E7E" Opacity="0.7">
+        <ComboBox x:Name="country" HorizontalAlignment="Left" VerticalAlignment="Top" Width="217" Margin="10,30,0,0" Height="26" BorderBrush="#FFFF7E7E" Opacity="0.7" SelectionChanged="country_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
