@@ -8,7 +8,7 @@
             <ColumnDefinition Width="234*"/>
             <ColumnDefinition Width="37*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="fon" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="550" Source="pict/result.jpg" d:IsHidden="True" Grid.ColumnSpan="2" Margin="0,0,-8,-30"/>
+        <Image x:Name="fon" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="550" Source="pict/result.jpg" Grid.ColumnSpan="2" Margin="0,0,-8,-30"/>
 
         <TextBlock x:Name="titlr" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="95,10,0,0" FontFamily="Cambria" FontSize="36"><Run Text="Найдено        "/><Run Text="      мест."/></TextBlock>
         <TextBlock x:Name="amount" HorizontalAlignment="Left" TextWrapping="Wrap" Text="N" VerticalAlignment="Top" Margin="268,0,0,0" FontSize="48" FontFamily="Cambria" Width="72"/>

@@ -205,6 +205,22 @@
     <Resource Include="places\43.jpg" />
     <Resource Include="places\44.jpg" />
     <Resource Include="pict\weather.jpg" />
+    <Resource Include="places\45.jpg" />
+    <Resource Include="places\46.jpg" />
+    <Resource Include="places\47.jpg" />
+    <Resource Include="places\48.jpg" />
+    <Resource Include="places\49.jpg" />
+    <Resource Include="places\50.jpg" />
+    <Resource Include="places\51.jpg" />
+    <Resource Include="places\52.jpg" />
+    <Resource Include="places\53.jpg" />
+    <Resource Include="places\54.jpg" />
+    <Resource Include="places\55.jpg" />
+    <Resource Include="places\56.jpg" />
+    <Resource Include="places\57.jpg" />
+    <Resource Include="places\58.jpg" />
+    <Resource Include="places\59.jpg" />
+    <Resource Include="places\60.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -62,17 +62,17 @@
             <RadioButton x:Name="yn2" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,13,0,0" FontFamily="Cambria" FontSize="20" Grid.Column="2"/>
             <RadioButton x:Name="yes2" Content="Да" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Grid.ColumnSpan="2" Checked="yes2_Checked" HorizontalAlignment="Left" Width="45"/>
         </Grid>
-        <TextBlock x:Name="nature" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,66,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"><Run Text="Заповедник"/></TextBlock>
-        <TextBlock x:Name="sea" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Море" VerticalAlignment="Top" Margin="27,107,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="moun" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Горы" VerticalAlignment="Top" Margin="27,148,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="resort" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Курорт" VerticalAlignment="Top" Margin="27,189,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="ski" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Горнолыжный курорт" VerticalAlignment="Top" Margin="27,271,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="hist" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Исторические места" VerticalAlignment="Top" Margin="27,230,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="active" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Активный отдых" VerticalAlignment="Top" Margin="27,312,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="dangerous" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Опасная страна" VerticalAlignment="Top" Margin="27,353,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="exot" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Экзотическая страна" VerticalAlignment="Top" Margin="27,394,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="visa" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Собираетесь ли вы делать визу?" VerticalAlignment="Top" Margin="22,435,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
-        <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="На сколько дней вы едете?" VerticalAlignment="Top" Margin="27,476,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
+        <TextBlock x:Name="nature" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,66,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"><Run Text="Заповедник"/></TextBlock>
+        <TextBlock x:Name="sea" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Море" VerticalAlignment="Top" Margin="27,107,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="moun" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Горы" VerticalAlignment="Top" Margin="27,148,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="resort" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Курорт" VerticalAlignment="Top" Margin="27,189,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="ski" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Горнолыжный курорт" VerticalAlignment="Top" Margin="27,271,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="hist" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Исторические места" VerticalAlignment="Top" Margin="27,230,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="active" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Активный отдых" VerticalAlignment="Top" Margin="27,312,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="dangerous" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Опасная страна" VerticalAlignment="Top" Margin="27,353,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="exot" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Экзотическая страна" VerticalAlignment="Top" Margin="27,394,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="visa" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Есть ли у вас виза?" VerticalAlignment="Top" Margin="22,435,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="На сколько дней вы едете?" VerticalAlignment="Top" Margin="27,476,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
         <TextBlock x:Name="title" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="21,11,0,0" FontFamily="Cambria" FontSize="36" Width="725" FontWeight="Bold" Foreground="#FFC1343A"><Run FontSize="30" Text="Выберете критерии поиска места для отдыха"/><Run Text="."/></TextBlock>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,461,0,0">
             <TextBox x:Name="infotext" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Margin="0,9,0,0" Text="0"/>
@@ -96,7 +96,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберете континент" VerticalAlignment="Top" Margin="27,519,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic"/>
+        <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберете континент" VerticalAlignment="Top" Margin="27,519,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
 
     </Grid>
 </Window>

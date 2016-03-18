@@ -44,6 +44,7 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            InfoPlace.cparray.Clear();
             Results res = new Results();
             cmd.Connection = con;
             con.Open();
