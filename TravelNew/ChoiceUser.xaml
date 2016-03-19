@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="TravelNew.ChoiceUser"
-        Title="ChoiceUser" Height="667.5" Width="756" ResizeMode="NoResize">
+        Title="ChoiceUser" Height="687" Width="751.5" ResizeMode="NoResize">
     <Grid Margin="0,0,-6,-18">
 
         <Image x:Name="top" HorizontalAlignment="Left" Height="648" VerticalAlignment="Top" Width="747" Source="pict/ch.jpg"/>
@@ -78,7 +78,7 @@
             <TextBox x:Name="infotext" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Margin="0,9,0,0" Text="0"/>
             <TextBlock x:Name="info" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Введите целое число. Если не имеет значения, то введите 0" VerticalAlignment="Top" Margin="191,-4,-4,-13" FontFamily="Cambria" FontSize="16" FontStyle="Italic"/>
         </Grid>
-        <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="27,560,0,0" Height="37" FontSize="22" FontFamily="Constantia" Click="Button_Click">
+        <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="27,593,0,0" Height="37" FontSize="22" FontFamily="Constantia" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -88,14 +88,20 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,519,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold" Text="Выберите континент"/>
+        <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,559,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold" Text="Выберите континент"/>
         <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="476" Margin="250,519,0,0">
-            <CheckBox x:Name="eu" Content="Европа" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Cambria" Margin="10,0,0,0" Checked="eu_Checked"/>
-            <CheckBox x:Name="af" Content="Африка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,34,0,0" FontSize="20" FontFamily="Cambria" Checked="af_Checked"/>
-            <CheckBox x:Name="nam" Content="Северная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,0,0,0" FontSize="20" FontFamily="Cambria" Checked="nam_Checked"/>
-            <CheckBox x:Name="sam" Content="Южная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,34,0,0" FontSize="20" FontFamily="Cambria" Checked="sam_Checked"/>
-            <CheckBox x:Name="austr" Content="Австралия &#xD;&#xA;и Океания" VerticalAlignment="Top" Margin="313,34,-33,0" FontSize="20" FontFamily="Cambria" Height="50" Checked="austr_Checked"/>
-            <CheckBox x:Name="asia" Content="Азия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,1,0,0" FontSize="20" FontFamily="Cambria" Checked="asia_Checked"/>
+            <CheckBox x:Name="eu" Content="Европа" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Cambria" Margin="10,40,0,0" Checked="eu_Checked"/>
+            <CheckBox x:Name="af" Content="Африка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,74,0,0" FontSize="20" FontFamily="Cambria" Checked="af_Checked"/>
+            <CheckBox x:Name="nam" Content="Северная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,40,0,0" FontSize="20" FontFamily="Cambria" Checked="nam_Checked"/>
+            <CheckBox x:Name="sam" Content="Южная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,74,0,0" FontSize="20" FontFamily="Cambria" Checked="sam_Checked"/>
+            <CheckBox x:Name="austr" Content="Австралия &#xD;&#xA;и Океания" VerticalAlignment="Top" Margin="313,74,-33,-24" FontSize="20" FontFamily="Cambria" Height="50" Checked="austr_Checked"/>
+            <CheckBox x:Name="asia" Content="Азия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,41,0,0" FontSize="20" FontFamily="Cambria" Checked="asia_Checked"/>
+        </Grid>
+        <TextBlock x:Name="trans" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Готовы делать пересадки?" VerticalAlignment="Top" Margin="27,515,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,506,0,0">
+            <RadioButton x:Name="no11" Content="Нет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,13,0,0" FontFamily="Cambria" FontSize="20" Checked="no10_Checked"/>
+            <RadioButton x:Name="yes11" Content="Да" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0" RenderTransformOrigin="0.561,1.062" FontFamily="Cambria" FontSize="20" Checked="yes10_Checked"/>
+            <RadioButton x:Name="yn11" Content="Не имеет значения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,13,0,0" FontFamily="Cambria" FontSize="20" Checked="yn10_Checked"/>
         </Grid>
 
     </Grid>

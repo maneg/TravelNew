@@ -76,7 +76,8 @@ namespace TravelNew
                 }
 
             }
-            res.amount.Text = res.listresults.Items.Count.ToString();
+            res.titlr.Text=string.Format("Найдено {0} мест", res.listresults.Items.Count.ToString() );
+            
             con.Close();
             res.ShowDialog();
         }

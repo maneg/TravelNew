@@ -11,7 +11,6 @@
         <Image x:Name="fon" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="550" Source="pict/result.jpg" Grid.ColumnSpan="2" Margin="0,0,-8,-30"/>
 
         <TextBlock x:Name="titlr" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="95,10,0,0" FontFamily="Cambria" FontSize="36"><Run Text="Найдено        "/><Run Text="      мест."/></TextBlock>
-        <TextBlock x:Name="amount" HorizontalAlignment="Left" TextWrapping="Wrap" Text="N" VerticalAlignment="Top" Margin="268,0,0,0" FontSize="48" FontFamily="Cambria" Width="72"/>
         <ListBox x:Name="listresults" HorizontalAlignment="Left" Height="226" VerticalAlignment="Top" Width="478" Margin="29,82,0,0" RenderTransformOrigin="-0.02,0.022" Opacity="0.8" FontFamily="Cambria" FontSize="16" Grid.ColumnSpan="2"/>
         <Button x:Name="select" Content="Выбрать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="181,321,0,0" Height="34" Click="Button_Click" FontFamily="Cambria" FontSize="18" Opacity="0.9"/>
 
