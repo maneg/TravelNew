@@ -31,16 +31,16 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (listresults.SelectedIndex == 1)
+            if (listresults.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите место!");
+            }
+            else
             {
                 int selectedindex = listresults.SelectedIndex;
                 int selectedid = InfoPlace.cparray[selectedindex].Id;
 
                 sq.ShowPlace(selectedid);
-            }
-            else
-            {
-                MessageBox.Show("Выберите место!");
             }
         }
     }
