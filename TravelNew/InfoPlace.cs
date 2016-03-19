@@ -22,6 +22,7 @@ namespace TravelNew
         public static string info;
         public static string city;
         public static string currency_foreign;
+        public static string currency_foreign_code;
         public static List<ChosenP> cparray = new List<ChosenP>();
         public static List<ChosenP> ccarray = new List<ChosenP>();
         
@@ -46,14 +47,14 @@ namespace TravelNew
             himidity = data.Main.Humidity;
         }
 
-        public static void CurrencyInfo()
+        public static void CurrencyInfo(out string s)
         {
             string APIkey = "219a7c4cc8020ed17e7b0ee8";
 
             string amount_currency = "1";
             WebClient client = new WebClient();
-            var result = client.DownloadString(string.Format("https://www.exchangerate-api.com/{1}/RUB/{2}?k={0}", APIkey, currency_foreign, amount_currency));
-            
+            var result = client.DownloadString(string.Format("https://www.exchangerate-api.com/{1}/RUB/{2}?k={0}", APIkey, currency_foreign_code, amount_currency));
+            s = result.ToString();
             
         }
         

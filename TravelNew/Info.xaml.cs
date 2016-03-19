@@ -42,5 +42,11 @@ namespace TravelNew
             Weather weath = new Weather();
             weath.ShowDialog();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Currency cur = new Currency();
+            cur.ShowDialog();
+        }
     }
 }

@@ -46,7 +46,8 @@ namespace TravelNew
                     InfoPlace.capital = drcountry[2].ToString();
                     InfoPlace.country = drcountry[1].ToString();
                     InfoPlace.info_visa = drcountry[10].ToString();
-                    InfoPlace.currency_foreign = drcountry[8].ToString();
+                    InfoPlace.currency_foreign_code = drcountry[8].ToString();
+                    InfoPlace.currency_foreign = drcountry[7].ToString();
                     
                 }
             }

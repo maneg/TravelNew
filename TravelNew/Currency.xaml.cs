@@ -22,6 +22,13 @@ namespace TravelNew
         public Currency()
         {
             InitializeComponent();
+            string s;
+            InfoPlace.CurrencyInfo(out s);
+            country.Text = InfoPlace.country;
+            amount.Text = s;
+            name_curr.Text = InfoPlace.currency_foreign;
+            name_curr2.Text = InfoPlace.currency_foreign;
+
         }
     }
 }
