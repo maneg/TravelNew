@@ -76,6 +76,9 @@
       <DependentUpon>ChoiceUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="ChosenP.cs" />
+    <Compile Include="Currency.xaml.cs">
+      <DependentUpon>Currency.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DTO\Coord.cs" />
     <Compile Include="DTO\MainData.cs" />
     <Compile Include="DTO\WeatherData.cs" />
@@ -94,6 +97,10 @@
       <DependentUpon>Weather.xaml</DependentUpon>
     </Compile>
     <Page Include="ChoiceUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Currency.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
