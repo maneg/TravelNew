@@ -23,11 +23,12 @@ namespace TravelNew
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random rnd = new Random();
+
         public MainWindow()
         {
             InitializeComponent();
         }
-        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -43,7 +44,9 @@ namespace TravelNew
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("короче тут пока пусто");
+            int selectedid = rnd.Next(1, 122);
+            ShowQuery sq = new ShowQuery();
+            sq.ShowPlace(selectedid);
         }
     }
 }

@@ -23,6 +23,7 @@ namespace TravelNew
         public static string city;
         public static string currency_foreign;
         public static List<ChosenP> cparray = new List<ChosenP>();
+        public static List<ChosenP> ccarray = new List<ChosenP>();
         
         public static void SelectingInfo(object a)
         {

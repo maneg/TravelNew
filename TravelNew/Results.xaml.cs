@@ -22,9 +22,7 @@ namespace TravelNew
     /// </summary>
     public partial class Results : Window
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
-        SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr, dr2;
+        ShowQuery sq = new ShowQuery();
 
         public Results()
         {
@@ -33,49 +31,17 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            int selectedindex = listresults.SelectedIndex;
-            int selectedid = InfoPlace.cparray[selectedindex].Id;
-
-
-            cmd.Connection = con;
-            con.Open();
-            cmd.CommandText =
-            "SELECT * FROM Place WHERE Place.idplace =" + selectedid;
-            dr = cmd.ExecuteReader();
-            if (dr.HasRows)
+            if (listresults.SelectedIndex == 1)
             {
-                while (dr.Read())
-                {
-                    InfoPlace.placename = dr[1].ToString();
-                    InfoPlace.info=dr[10].ToString();
-                    InfoPlace.id=int.Parse(dr[0].ToString());
-                    InfoPlace.idcountry = int.Parse(dr[2].ToString());
-                }
-            }
-            con.Close();
+                int selectedindex = listresults.SelectedIndex;
+                int selectedid = InfoPlace.cparray[selectedindex].Id;
 
-            cmd.Connection = con;
-            con.Open();
-            cmd.CommandText =
-            "SELECT * FROM Country WHERE Country.IdCountry =" + InfoPlace.idcountry;
-            dr2 = cmd.ExecuteReader();
-            if (dr2.HasRows)
+                sq.ShowPlace(selectedid);
+            }
+            else
             {
-                while (dr2.Read())
-                {
-                    InfoPlace.info_dangerous = dr2[4].ToString();
-                    InfoPlace.capital = dr2[2].ToString();
-                    InfoPlace.country = dr2[1].ToString();
-                    InfoPlace.info_visa = dr2[10].ToString();
-                    InfoPlace.currency_foreign=dr2[8].ToString();
-                }
+                MessageBox.Show("Выберите место!");
             }
-
-            con.Close();
-            Info inf = new Info();
-            
-            inf.ShowDialog();
         }
     }
 }
