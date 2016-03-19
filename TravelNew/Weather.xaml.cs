@@ -50,9 +50,9 @@ namespace TravelNew
             //double temp0;
             //double pressure2;
             //double himidity2;
-            //InfoPlace.WeatherInfo(city2, out lat2, out longi2, out speed2, out temp0, out pressure2, out himidity2);
+            //InfoPlace.WeatherInfo(city2, out lat2, out longi2, out speed2, out temp2, out pressure2, out himidity2);
 
-            //temp2.Text = temp0.ToString();
+            //temp2.Text = temp2.ToString();
             //press2.Text = pressure2.ToString();
             //himi2.Text = himidity2.ToString();
             
