@@ -71,22 +71,14 @@
         <TextBlock x:Name="active" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Активный отдых" VerticalAlignment="Top" Margin="27,312,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
         <TextBlock x:Name="dangerous" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Опасная страна" VerticalAlignment="Top" Margin="27,353,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
         <TextBlock x:Name="exot" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Экзотическая страна" VerticalAlignment="Top" Margin="27,394,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBlock x:Name="visa" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Есть ли у вас виза?" VerticalAlignment="Top" Margin="22,435,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="На сколько дней вы едете?" VerticalAlignment="Top" Margin="27,476,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBlock x:Name="title" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="21,11,0,0" FontFamily="Cambria" FontSize="36" Width="725" FontWeight="Bold" Foreground="#FFC1343A"><Run FontSize="30" Text="Выберете критерии поиска места для отдыха"/><Run Text="."/></TextBlock>
+        <TextBlock x:Name="visa" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Собираетесь делать визу?" VerticalAlignment="Top" Margin="27,433,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="На сколько дней вы едете?" VerticalAlignment="Top" Margin="25,475,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="title" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="21,11,0,0" FontFamily="Cambria" FontSize="36" Width="725" FontWeight="Bold" Foreground="#FFC1343A"><Run FontSize="30" Text="Выб"/><Run FontSize="30" Text="е"/><Run FontSize="30" Text="р"/><Run FontSize="30" Text="и"/><Run FontSize="30" Text="те критерии поиска места для отдыха"/><Run Text="."/></TextBlock>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,461,0,0">
             <TextBox x:Name="infotext" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Margin="0,9,0,0" Text="0"/>
             <TextBlock x:Name="info" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Введите целое число. Если не имеет значения, то введите 0" VerticalAlignment="Top" Margin="191,-4,-4,-13" FontFamily="Cambria" FontSize="16" FontStyle="Italic"/>
-            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" Margin="0,59,0,-42">
-                <ComboBoxItem Content="Европа" HorizontalAlignment="Left" Width="179"/>
-                <ComboBoxItem Content="Южная Америка" HorizontalAlignment="Left" Width="179"/>
-                <ComboBoxItem Content="Австралия и Океания" HorizontalAlignment="Left" Width="179"/>
-                <ComboBoxItem Content="Северная Америка" HorizontalAlignment="Left" Width="179"/>
-                <ComboBoxItem Content="Африка" HorizontalAlignment="Left" Width="179"/>
-                <ComboBoxItem Content="Азия" HorizontalAlignment="Left" Width="179"/>
-            </ComboBox>
         </Grid>
-        <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="495,555,0,0" Height="37" FontSize="22" FontFamily="Constantia" Click="Button_Click">
+        <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="27,560,0,0" Height="37" FontSize="22" FontFamily="Constantia" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -96,7 +88,15 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберете континент" VerticalAlignment="Top" Margin="27,519,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,519,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold" Text="Выберите континент"/>
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="476" Margin="250,519,0,0">
+            <CheckBox x:Name="eu" Content="Европа" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Cambria" Margin="10,0,0,0"/>
+            <CheckBox x:Name="af" Content="Африка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,34,0,0" FontSize="20" FontFamily="Cambria"/>
+            <CheckBox x:Name="nam" Content="Северная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,0,0,0" FontSize="20" FontFamily="Cambria"/>
+            <CheckBox x:Name="sam" Content="Южная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,34,0,0" FontSize="20" FontFamily="Cambria"/>
+            <CheckBox x:Name="austr" Content="Австралия &#xD;&#xA;и Океания" VerticalAlignment="Top" Margin="313,34,-33,0" FontSize="20" FontFamily="Cambria" Height="50"/>
+            <CheckBox x:Name="asia" Content="Азия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,1,0,0" FontSize="20" FontFamily="Cambria"/>
+        </Grid>
 
     </Grid>
 </Window>
