@@ -271,6 +271,26 @@
     <Resource Include="places\98.jpg" />
     <Resource Include="places\99.jpg" />
     <Resource Include="pict\currency.jpg" />
+    <Resource Include="places\102.jpg" />
+    <Resource Include="places\103.jpg" />
+    <Resource Include="places\104.jpg" />
+    <Resource Include="places\105.jpg" />
+    <Resource Include="places\106.jpg" />
+    <Resource Include="places\107.jpg" />
+    <Resource Include="places\108.jpg" />
+    <Resource Include="places\109.jpg" />
+    <Resource Include="places\110.jpg" />
+    <Resource Include="places\111.jpg" />
+    <Resource Include="places\112.jpg" />
+    <Resource Include="places\113.jpg" />
+    <Resource Include="places\114.jpg" />
+    <Resource Include="places\115.jpg" />
+    <Resource Include="places\116.jpg" />
+    <Resource Include="places\117.jpg" />
+    <Resource Include="places\118.jpg" />
+    <Resource Include="places\119.jpg" />
+    <Resource Include="places\120.jpg" />
+    <Resource Include="places\121.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
