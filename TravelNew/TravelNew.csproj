@@ -270,6 +270,7 @@
     <Resource Include="places\97.jpg" />
     <Resource Include="places\98.jpg" />
     <Resource Include="places\99.jpg" />
+    <Resource Include="pict\currency.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

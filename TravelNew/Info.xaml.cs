@@ -34,6 +34,9 @@ namespace TravelNew
             information.Text = InfoPlace.info;
             dangerous_info.Text = InfoPlace.info_dangerous;
             visa_info.Text = InfoPlace.info_visa;
+            if (visa_info.Text == "")
+                visa_info.Text = "Для въезда в эту страну виза обязательна.";
+
 
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,9 @@ namespace TravelNew
         public Currency()
         {
             InitializeComponent();
-            //string s;
-            //InfoPlace.CurrencyInfo(out s);
-            //double exam = double.Parse(s);
+            string s;
+            InfoPlace.CurrencyInfo(out s);
+            double exam = double.Parse(s, CultureInfo.InvariantCulture);
             
             name_curr.Text = string.Format("Валюта страны {0} - {1}", InfoPlace.country, InfoPlace.currency_foreign);
             if (exam != -2)
