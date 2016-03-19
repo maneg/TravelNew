@@ -22,13 +22,16 @@ namespace TravelNew
         public Currency()
         {
             InitializeComponent();
-            string s;
-            InfoPlace.CurrencyInfo(out s);
-            country.Text = InfoPlace.country;
-            amount.Text = s;
-            name_curr.Text = InfoPlace.currency_foreign;
-            name_curr2.Text = InfoPlace.currency_foreign;
-
+            //string s;
+            //InfoPlace.CurrencyInfo(out s);
+            //double exam = double.Parse(s);
+            
+            name_curr.Text = string.Format("Валюта страны {0} - {1}", InfoPlace.country, InfoPlace.currency_foreign);
+            if (exam != -2)
+                name_curr2.Text = string.Format("В 1 {0} - {1} рублей", InfoPlace.currency_foreign, s);
+            else
+                name_curr2.Text = string.Format("К сожалению, информация о курсе данной валюты отсутствует.");
+            
         }
     }
 }
