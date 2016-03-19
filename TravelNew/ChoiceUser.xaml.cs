@@ -41,7 +41,8 @@ namespace TravelNew
                sqlhistorical,
                sqldangerous,
                sqlexotic,
-               sqlvisa;
+               sqlvisa,
+               sqlcountry = " ";
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -50,7 +51,9 @@ namespace TravelNew
 
             cmd.Connection = con;
             con.Open();
-            cmd.CommandText = "SELECT Place.Name, Place.IdPlace FROM Place JOIN Country ON Place.Idcountry = Country.Idcountry WHERE (Place.Nature =" + sqlnature +
+            cmd.CommandText = "SELECT Place.Name, Place.IdPlace FROM Place " +
+                                   "JOIN Country ON Place.Idcountry = Country.Idcountry " +
+                                   "JOIN Continent ON Country.Idcontinent = Continent.Idcontinent WHERE (Place.Nature =" + sqlnature +
                 //"AND (Place.Sea =" + sqlsea +
                 //"AND (Place.Mountains =" + sqlmountains +
                 //"AND (Place.Resort =" + sqlresort +
@@ -59,7 +62,8 @@ namespace TravelNew
                 //"AND (Place.Historical =" + sqlhistorical +
                 //"AND (Country.Dangerous =" + sqldangerous +
                 //"AND (Country.Exotic =" + sqlexotic;
-                "AND (" + sqlvisa;// +sqlvisa;
+                //"AND (" + sqlvisa +
+                     " AND (" + sqlcountry + " Continent.Idcontinent = 7)";
 
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
@@ -83,7 +87,37 @@ namespace TravelNew
             str = str.Substring(6, str.Length - 15);
             AppDomain.CurrentDomain.SetData("DataDirectory", str);
         }
-        
+        //checkbox не работает
+        private void eu_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlcountry += " Continent.Idcontinent = 1 OR ";
+        }
+
+        private void sam_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlcountry += " Continent.Idcontinent = 2 OR ";
+        }
+
+        private void austr_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlcountry += " Continent.Idcontinent = 3 OR ";
+        }
+
+        private void nam_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlcountry += " Continent.Idcontinent = 4 OR ";
+        }
+
+        private void af_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlcountry += " Continent.Idcontinent = 5 OR ";
+        }
+
+        private void asia_Checked(object sender, RoutedEventArgs e)
+        {
+            sqlcountry += " Continent.Idcontinent = 6 OR ";
+        }
+
         private void yes1_Checked(object sender, RoutedEventArgs e)
         {
             sqlnature = "1)";
