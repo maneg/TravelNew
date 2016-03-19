@@ -28,6 +28,7 @@ namespace TravelNew
                     InfoPlace.info = drplace[10].ToString();
                     InfoPlace.id = int.Parse(drplace[0].ToString());
                     InfoPlace.idcountry = int.Parse(drplace[2].ToString());
+                    InfoPlace.city = drplace[12].ToString();
                 }
             }
             con.Close();
@@ -46,6 +47,7 @@ namespace TravelNew
                     InfoPlace.country = drcountry[1].ToString();
                     InfoPlace.info_visa = drcountry[10].ToString();
                     InfoPlace.currency_foreign = drcountry[8].ToString();
+                    
                 }
             }
             con.Close();

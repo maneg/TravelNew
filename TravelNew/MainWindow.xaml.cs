@@ -45,7 +45,7 @@ namespace TravelNew
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             int selectedid = rnd.Next(1, 122);
-            
+            selectedid = 21;
             ShowQuery sq = new ShowQuery();
             sq.ShowPlace(selectedid);
         }

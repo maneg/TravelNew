@@ -43,19 +43,14 @@ namespace TravelNew
             temp1.Text = temp.ToString();
             press1.Text = pressure.ToString();
             himi1.Text = himidity.ToString();
+            speed1.Text = speed.ToString();
+           
+           InfoPlace.WeatherInfo(city2, out lat, out longi, out speed, out temp, out pressure, out himidity);
 
-            //double lat2;
-            //double longi2;
-            //double speed2;
-            //double temp0;
-            //double pressure2;
-            //double himidity2;
-            //InfoPlace.WeatherInfo(city2, out lat2, out longi2, out speed2, out temp2, out pressure2, out himidity2);
-
-            //temp2.Text = temp2.ToString();
-            //press2.Text = pressure2.ToString();
-            //himi2.Text = himidity2.ToString();
-            
+           temp2.Text = temp.ToString();
+           press2.Text = pressure.ToString();
+           himi2.Text = himidity.ToString();
+           speed2.Text = speed.ToString();
         }
 
         private void temp1_TextChanged(object sender, TextChangedEventArgs e)

@@ -8,8 +8,9 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="280,10,0,0" Text="НАЗВАНИЕ ВАЛЮТЫ" FontFamily="Cambria" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Margin="46,54,0,0" FontFamily="Cambria" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="НАЗВАНИЕ ВАЛЮТЫ" VerticalAlignment="Top" Margin="99,54,0,0" FontFamily="Cambria" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="N" VerticalAlignment="Top" Margin="326,53,0,0" FontFamily="Cambria" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="N" VerticalAlignment="Top" Margin="337,53,0,0" FontFamily="Cambria" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="рублей" VerticalAlignment="Top" Margin="393,53,0,0" FontFamily="Cambria" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Margin="292,48,0,0" FontFamily="Cambria" FontSize="24"/>
 
     </Grid>
 </Window>
