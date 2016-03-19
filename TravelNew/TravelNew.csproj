@@ -229,6 +229,23 @@
     <Resource Include="places\7.jpg" />
     <Resource Include="places\8.jpg" />
     <Resource Include="places\9.jpg" />
+    <Resource Include="places\61.jpg" />
+    <Resource Include="places\62.jpg" />
+    <Resource Include="places\63.jpg" />
+    <Resource Include="places\64.jpg" />
+    <Resource Include="places\65.jpg" />
+    <Resource Include="places\66.jpg" />
+    <Resource Include="places\67.jpg" />
+    <Resource Include="places\68.jpg" />
+    <Resource Include="places\69.jpg" />
+    <Resource Include="places\70.jpg" />
+    <Resource Include="places\71.jpg" />
+    <Resource Include="places\72.jpg" />
+    <Resource Include="places\73.jpg" />
+    <Resource Include="places\74.jpg" />
+    <Resource Include="places\75.jpg" />
+    <Resource Include="places\76.jpg" />
+    <Resource Include="places\77.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
