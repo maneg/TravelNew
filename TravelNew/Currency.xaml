@@ -5,8 +5,8 @@
     <Grid Margin="0,0,0,-4">
         <Image x:Name="currency" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="500" Source="pict/currency.jpg" Margin="0,-15,-8,-11"/>
 
-        <TextBlock x:Name="name_curr" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="40,20,0,0" Text="НАЗВАНИЕ ВАЛЮТЫ" FontFamily="Cambria" FontSize="18" Width="436" Height="37" Foreground="White"/>
-        <TextBlock x:Name="name_curr2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="НАЗВАНИЕ ВАЛЮТЫ" VerticalAlignment="Top" Margin="40,62,0,0" FontFamily="Cambria" FontSize="18" Width="436" Height="45" Foreground="White"/>
+        <TextBlock x:Name="name_curr" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="40,0,0,0" Text="НАЗВАНИЕ ВАЛЮТЫ" FontFamily="Cambria" FontSize="18" Width="436" Height="57" Foreground="Black"/>
+        <TextBlock x:Name="name_curr2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="НАЗВАНИЕ ВАЛЮТЫ" VerticalAlignment="Top" Margin="40,76,0,0" FontFamily="Cambria" FontSize="18" Width="436" Height="58" Foreground="Black"/>
 
     </Grid>
 </Window>

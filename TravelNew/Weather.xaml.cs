@@ -44,13 +44,20 @@ namespace TravelNew
             press1.Text = pressure.ToString();
             himi1.Text = himidity.ToString();
             speed1.Text = speed.ToString();
-           
-           InfoPlace.WeatherInfo(city2, out lat, out longi, out speed, out temp, out pressure, out himidity);
 
-           temp2.Text = temp.ToString();
-           press2.Text = pressure.ToString();
-           himi2.Text = himidity.ToString();
-           speed2.Text = speed.ToString();
+            try
+            {
+                InfoPlace.WeatherInfo(city2, out lat, out longi, out speed, out temp, out pressure, out himidity);
+
+                temp2.Text = temp.ToString();
+                press2.Text = pressure.ToString();
+                himi2.Text = himidity.ToString();
+                speed2.Text = speed.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("К сожалению, информация о погоде в данном регионе на данный момент недоступна.");
+            }
         }
 
         private void temp1_TextChanged(object sender, TextChangedEventArgs e)
