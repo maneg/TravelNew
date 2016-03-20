@@ -55,6 +55,7 @@ namespace TravelNew
             }
             else
             {
+      
                 int selectedindex = place.SelectedIndex;
                 int selectedid = InfoPlace.cparray[selectedindex].Id;
                 sq.ShowPlace(selectedid);

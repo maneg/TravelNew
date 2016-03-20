@@ -42,7 +42,7 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            sqlcountry = "";
             if (eu.IsChecked == true)
                 sqlcountry += " Continent.Idcontinent = 1 OR ";
             if (sam.IsChecked == true)

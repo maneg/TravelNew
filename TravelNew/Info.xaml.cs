@@ -47,7 +47,7 @@ namespace TravelNew
             }
             catch
             {
-                MessageBox.Show("Отсутствиет связь с интернетом!");
+                MessageBox.Show("Отсутствует связь с интернетом!");
             }
         }
 
@@ -60,7 +60,7 @@ namespace TravelNew
             }
             catch
             {
-                MessageBox.Show("Отсутствиет связь с интернетом!");
+                MessageBox.Show("Отсутствует связь с интернетом!");
             }
         }
 
