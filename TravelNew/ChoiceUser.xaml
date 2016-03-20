@@ -79,7 +79,7 @@
         <TextBlock x:Name="time" HorizontalAlignment="Left" TextWrapping="Wrap" Text="На сколько дней вы едете?" VerticalAlignment="Top" Margin="21,73,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
         <TextBlock x:Name="title" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="21,11,0,0" FontFamily="Cambria" FontSize="36" Width="725" FontWeight="Bold" Foreground="#FFC1343A"><Run FontSize="30" Text="Выб"/><Run FontSize="30" Text="е"/><Run FontSize="30" Text="р"/><Run FontSize="30" Text="и"/><Run FontSize="30" Text="те критерии поиска места для отдыха"/><Run Text="."/></TextBlock>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,461,0,0">
-            <TextBox x:Name="infotext" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Margin="12,-395,0,0" Text="0" TextChanged="infotext_TextChanged" KeyDown="infotext_KeyDown"/>
+            <TextBox x:Name="infotext" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Margin="12,-395,0,0" Text="0" TextChanged="infotext_TextChanged"/>
             <TextBlock x:Name="info" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Введите целое число. Если не имеет значения, то введите 0" VerticalAlignment="Top" Margin="205,-410,-18,0" FontFamily="Cambria" FontSize="16" FontStyle="Italic"/>
         </Grid>
         <Button x:Name="search" Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="27,593,0,0" Height="37" FontSize="22" FontFamily="Constantia" Click="Button_Click" Opacity="0.7">

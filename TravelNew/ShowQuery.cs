@@ -41,7 +41,7 @@ namespace TravelNew
                     InfoPlace.city = drplace[12].ToString();
                 }
             }
-            con.Close();
+            con.Close(); 
 
             cmd.Connection = con;
             con.Open();

@@ -23,39 +23,58 @@ namespace TravelNew
         public Info()
         {
             InitializeComponent();
-
-            int op = InfoPlace.id;
-            string q = string.Format("/TravelNew;component/places/{0}.jpg",op);
-            top.Source = new BitmapImage(new Uri(q, UriKind.RelativeOrAbsolute));
             
-            place.Text = InfoPlace.placename;
-            country.Text = InfoPlace.country;
-            capital.Text = InfoPlace.capital;
-            information.Text = InfoPlace.info;
-            dangerous_info.Text = InfoPlace.info_dangerous;
-            visa_info.Text = InfoPlace.info_visa;
-            if (visa_info.Text == "")
-                visa_info.Text = "Для въезда в эту страну виза обязательна.";
+                int op = InfoPlace.id;
+                string q = string.Format("/TravelNew;component/places/{0}.jpg", op);
+                top.Source = new BitmapImage(new Uri(q, UriKind.RelativeOrAbsolute));
 
-
+                place.Text = InfoPlace.placename;
+                country.Text = InfoPlace.country;
+                capital.Text = InfoPlace.capital;
+                information.Text = InfoPlace.info;
+                dangerous_info.Text = InfoPlace.info_dangerous;
+                visa_info.Text = InfoPlace.info_visa;
+                if (visa_info.Text == "")
+                    visa_info.Text = "Для въезда в эту страну виза обязательна.";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Weather weath = new Weather();
-            weath.ShowDialog();
+            try
+            {
+                Weather weath = new Weather();
+                weath.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("Отсутствиет связь с интернетом!");
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Currency cur = new Currency();
-            cur.ShowDialog();
+            try
+            {
+                Currency cur = new Currency();
+                cur.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("Отсутствиет связь с интернетом!");
+            }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Map map = new Map();
-            map.ShowDialog();
+            try
+            {
+                Map map = new Map();
+                map.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("Отсутствиет связь с интернетом!");
+            }
         }
     }
 }

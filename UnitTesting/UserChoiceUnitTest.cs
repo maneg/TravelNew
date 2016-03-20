@@ -9,12 +9,11 @@ using TravelNew;
 namespace UnitTesting
 {
     [TestClass]
-    class MainWindowUnitTest
+    class UserChoiceUnitTest
     {
         [TestMethod]
-        public void Button_1_test()
-        {   
-            
+        public void daas()
+        {
         }
 
 
