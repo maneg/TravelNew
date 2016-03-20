@@ -24,8 +24,6 @@ namespace TravelNew
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
 
-        ShowQuery sq = new ShowQuery();
-
         public Find()
         {
             InitializeComponent();
@@ -47,7 +45,10 @@ namespace TravelNew
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+
         {
+            ShowQuery sq = new ShowQuery();
+
             if (place.SelectedItem == null)
             {
                 MessageBox.Show("Выберите место!");

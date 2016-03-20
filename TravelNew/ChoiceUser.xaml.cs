@@ -60,7 +60,9 @@ namespace TravelNew
                 sqlcountry += " Continent.Idcontinent = 5 OR ";
             if (asia.IsChecked == true)
                 sqlcountry += " Continent.Idcontinent = 6 OR ";
-
+         //   if (eu.IsChecked == false && sam.IsChecked == false && austr.IsChecked == false && nam.IsChecked == false && af.IsChecked == false && asia.IsChecked == false)
+           // MessageBox.Show("Выберите континет!");
+           
             cmd.Connection = con;
             con.Open();
             cmd.CommandText = "SELECT Place.Name, Place.IdPlace FROM Place " +

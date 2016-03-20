@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TravelNew
 {
-    class ShowQuery
+    public class ShowQuery
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
