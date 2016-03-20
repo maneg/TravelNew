@@ -173,7 +173,6 @@
   <ItemGroup>
     <Resource Include="pict\bot.jpg" />
     <Resource Include="pict\result.jpg" />
-    <Resource Include="pict\title1.jpg" />
     <Resource Include="pict\choiceuser.jpg" />
     <Resource Include="pict\ch.jpg" />
     <Resource Include="pict\weather.jpg" />
@@ -299,6 +298,7 @@
     <Resource Include="places\119.jpg" />
     <Resource Include="places\120.jpg" />
     <Resource Include="places\121.jpg" />
+    <Resource Include="pict\title1.jpg" />
     <Content Include="TravelData.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
