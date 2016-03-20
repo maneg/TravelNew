@@ -51,5 +51,11 @@ namespace TravelNew
             Currency cur = new Currency();
             cur.ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Map map = new Map();
+            map.ShowDialog();
+        }
     }
 }

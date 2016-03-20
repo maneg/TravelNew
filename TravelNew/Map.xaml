@@ -1,0 +1,9 @@
+﻿<Window x:Class="TravelNew.Map"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Map" Height="471.642" Width="607.463" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Left" Width="599">
+        <WebBrowser HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="600" Source="http://localhost:8888/connection/"/>
+
+    </Grid>
+</Window>

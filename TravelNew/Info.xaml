@@ -16,7 +16,7 @@
         <TextBlock x:Name="capital" HorizontalAlignment="Left" TextWrapping="Wrap" Text="название столицы" VerticalAlignment="Top" Margin="148,108,0,0" FontSize="20" FontFamily="Cambria" Foreground="White"/>
         <Button Content="Погода" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="22,61,0,0" Height="32" FontFamily="Cambria" FontSize="18" Opacity="0.8" Grid.Row="1" Click="Button_Click"/>
         <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="442,61,0,0" Height="32" Grid.Row="1" Opacity="0.8"/>
-        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="299,61,0,0" Height="32" Grid.Row="1" Opacity="0.8"/>
+        <Button Content="Карта пути" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="299,61,0,0" Height="32" Grid.Row="1" Opacity="0.8" FontSize="18" FontFamily="Cambria" Click="Button_Click_2"/>
         <Button Content="Конвертер валюты" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Margin="152,61,0,0" Height="32" RenderTransformOrigin="0.641,0.539" FontFamily="Cambria" FontSize="14" Opacity="0.8" Grid.Row="1" Click="Button_Click_1"/>
         <TextBlock x:Name="place" HorizontalAlignment="Left" TextWrapping="Wrap" Text="НАЗВАНИЕ МЕСТА" VerticalAlignment="Top" Margin="27,21,0,0" Height="72" Width="476" FontSize="48" FontFamily="Cambria" Foreground="White"/>
         <TextBox x:Name="dangerous_info" HorizontalAlignment="Left" Height="103" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Margin="309,153,0,0" Opacity="0.6" FontSize="14" FontFamily="Cambria"/>

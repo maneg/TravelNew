@@ -48,6 +48,8 @@ namespace TravelNew
             
             ShowQuery sq = new ShowQuery();
             sq.ShowPlace(selectedid);
+
+            
         }
     }
 }
