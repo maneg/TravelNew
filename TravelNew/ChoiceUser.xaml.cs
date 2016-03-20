@@ -48,6 +48,18 @@ namespace TravelNew
         {
             Results res = new Results();
             InfoPlace.cparray.Clear();
+            if (eu.IsChecked == true)
+                sqlcountry += " Continent.Idcontinent = 1 OR ";
+            if (sam.IsChecked == true)
+                sqlcountry += " Continent.Idcontinent = 2 OR ";
+            if (austr.IsChecked == true)
+                sqlcountry += " Continent.Idcontinent = 3 OR ";
+            if (nam.IsChecked == true) 
+                sqlcountry += " Continent.Idcontinent = 4 OR ";
+            if (af.IsChecked == true)
+                sqlcountry += " Continent.Idcontinent = 5 OR ";
+            if (asia.IsChecked == true)
+                sqlcountry += " Continent.Idcontinent = 6 OR ";
 
             cmd.Connection = con;
             con.Open();
@@ -64,6 +76,8 @@ namespace TravelNew
                 //"AND (Country.Exotic =" + sqlexotic;
                 //"AND (" + sqlvisa +
                      " AND (" + sqlcountry + " Continent.Idcontinent = 7)";
+
+            sqlcountry = "";
 
             dr = cmd.ExecuteReader();
             if (dr.HasRows)
@@ -87,36 +101,6 @@ namespace TravelNew
             string str = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
             str = str.Substring(6, str.Length - 15);
             AppDomain.CurrentDomain.SetData("DataDirectory", str);
-        }
-        //checkbox не работает
-        private void eu_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlcountry += " Continent.Idcontinent = 1 OR ";
-        }
-
-        private void sam_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlcountry += " Continent.Idcontinent = 2 OR ";
-        }
-
-        private void austr_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlcountry += " Continent.Idcontinent = 3 OR ";
-        }
-
-        private void nam_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlcountry += " Continent.Idcontinent = 4 OR ";
-        }
-
-        private void af_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlcountry += " Continent.Idcontinent = 5 OR ";
-        }
-
-        private void asia_Checked(object sender, RoutedEventArgs e)
-        {
-            sqlcountry += " Continent.Idcontinent = 6 OR ";
         }
 
         private void yes1_Checked(object sender, RoutedEventArgs e)

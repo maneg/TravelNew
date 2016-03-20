@@ -90,12 +90,12 @@
         </Button>
         <TextBlock x:Name="cont" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,559,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold" Text="Выберите континент"/>
         <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="476" Margin="250,519,0,0">
-            <CheckBox x:Name="eu" Content="Европа" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Cambria" Margin="10,40,0,0" Checked="eu_Checked" IsChecked="True"/>
-            <CheckBox x:Name="af" Content="Африка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,74,0,0" FontSize="20" FontFamily="Cambria" Checked="af_Checked" IsChecked="True"/>
-            <CheckBox x:Name="nam" Content="Северная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,40,0,0" FontSize="20" FontFamily="Cambria" Checked="nam_Checked" IsChecked="True"/>
-            <CheckBox x:Name="sam" Content="Южная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,74,0,0" FontSize="20" FontFamily="Cambria" Checked="sam_Checked" IsChecked="True"/>
-            <CheckBox x:Name="austr" Content="Австралия &#xD;&#xA;и Океания" VerticalAlignment="Top" Margin="313,74,-33,-24" FontSize="20" FontFamily="Cambria" Height="50" Checked="austr_Checked" IsChecked="True"/>
-            <CheckBox x:Name="asia" Content="Азия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,41,0,0" FontSize="20" FontFamily="Cambria" Checked="asia_Checked" IsChecked="True"/>
+            <CheckBox x:Name="eu" Content="Европа" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Cambria" Margin="10,40,0,0"  IsChecked="True"/>
+            <CheckBox x:Name="af" Content="Африка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,74,0,0" FontSize="20" FontFamily="Cambria"  IsChecked="True"/>
+            <CheckBox x:Name="nam" Content="Северная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,40,0,0" FontSize="20" FontFamily="Cambria"  IsChecked="True"/>
+            <CheckBox x:Name="sam" Content="Южная Америка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,74,0,0" FontSize="20" FontFamily="Cambria"  IsChecked="True"/>
+            <CheckBox x:Name="austr" Content="Австралия &#xD;&#xA;и Океания" VerticalAlignment="Top" Margin="313,74,-33,-24" FontSize="20" FontFamily="Cambria" Height="50"  IsChecked="True"/>
+            <CheckBox x:Name="asia" Content="Азия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,41,0,0" FontSize="20" FontFamily="Cambria"  IsChecked="True"/>
         </Grid>
         <TextBlock x:Name="trans" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Готовы делать пересадки?" VerticalAlignment="Top" Margin="27,515,0,0" FontSize="20" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold"/>
         <Grid HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="362" Margin="308,506,0,0">
