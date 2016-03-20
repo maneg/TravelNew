@@ -97,6 +97,7 @@
     <Compile Include="Results.xaml.cs">
       <DependentUpon>Results.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserChoiceQuery.cs" />
     <Compile Include="Weather.xaml.cs">
       <DependentUpon>Weather.xaml</DependentUpon>
     </Compile>

@@ -22,10 +22,6 @@ namespace TravelNew
     /// </summary>
     public partial class ChoiceUser : Window
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TravelData.mdf;Integrated Security=True");
-        SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr;
-
 
         public ChoiceUser()
         {
@@ -46,8 +42,7 @@ namespace TravelNew
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Results res = new Results();
-            InfoPlace.cparray.Clear();
+           
             if (eu.IsChecked == true)
                 sqlcountry += " Continent.Idcontinent = 1 OR ";
             if (sam.IsChecked == true)
@@ -60,42 +55,17 @@ namespace TravelNew
                 sqlcountry += " Continent.Idcontinent = 5 OR ";
             if (asia.IsChecked == true)
                 sqlcountry += " Continent.Idcontinent = 6 OR ";
-         //   if (eu.IsChecked == false && sam.IsChecked == false && austr.IsChecked == false && nam.IsChecked == false && af.IsChecked == false && asia.IsChecked == false)
-           // MessageBox.Show("Выберите континет!");
-           
-            cmd.Connection = con;
-            con.Open();
-            cmd.CommandText = "SELECT Place.Name, Place.IdPlace FROM Place " +
-                                   "JOIN Country ON Place.Idcountry = Country.Idcountry " +
-                                   "JOIN Continent ON Country.Idcontinent = Continent.Idcontinent WHERE (Place.Nature =" + sqlnature +
-                "AND (Place.Sea =" + sqlsea +
-                "AND (Place.Mountains =" + sqlmountains +
-                "AND (Place.Resort =" + sqlresort +
-                "AND (Place.Skiresort =" + sqlskiresort +
-                "AND (Place.Active =" + sqlactive +
-                "AND (Place.Historical =" + sqlhistorical +
-                "AND (Country.Dangerous =" + sqldangerous +
-                "AND (Country.Exotic =" + sqlexotic+
-            "AND (" + sqlvisa +
-                     " AND (" + sqlcountry + " Continent.Idcontinent = 7)";
-
-            sqlcountry = "";
-
-            dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-            {
-                while (dr.Read())
-                {
-                    ChosenP cp = new ChosenP(int.Parse(dr[1].ToString()), dr[0].ToString());
-                    InfoPlace.cparray.Add(cp);
-                    res.listresults.Items.Add(dr[0].ToString());
-                }
-
-            }
-            res.titlr.Text=string.Format("Найдено {0} мест", res.listresults.Items.Count.ToString() );
+            UserChoiceQuery ucq = new UserChoiceQuery();
+            ucq.Choice(sqlnature, sqlsea, sqlmountains,
+               sqlresort,
+               sqlskiresort,
+               sqlactive,
+               sqlhistorical,
+               sqldangerous,
+               sqlexotic,
+               sqlvisa,
+               sqlcountry);
             
-            con.Close();
-            res.ShowDialog();
         }
 
         public void DBPath()
@@ -270,11 +240,6 @@ namespace TravelNew
                 textBox.Text = textBox.Text.Remove(iOffset, iAddedLength);
             } 
         }
-
-            private void infotext_KeyDown(object sender, KeyEventArgs e)
-            {
-
-            }
         
     }
 }
