@@ -68,15 +68,15 @@ namespace TravelNew
             cmd.CommandText = "SELECT Place.Name, Place.IdPlace FROM Place " +
                                    "JOIN Country ON Place.Idcountry = Country.Idcountry " +
                                    "JOIN Continent ON Country.Idcontinent = Continent.Idcontinent WHERE (Place.Nature =" + sqlnature +
-                //"AND (Place.Sea =" + sqlsea +
-                //"AND (Place.Mountains =" + sqlmountains +
-                //"AND (Place.Resort =" + sqlresort +
-                //"AND (Place.Skiresort =" + sqlskiresort +
-                //"AND (Place.Active =" + sqlactive +
-                //"AND (Place.Historical =" + sqlhistorical +
-                //"AND (Country.Dangerous =" + sqldangerous +
-                //"AND (Country.Exotic =" + sqlexotic;
-                //"AND (" + sqlvisa +
+                "AND (Place.Sea =" + sqlsea +
+                "AND (Place.Mountains =" + sqlmountains +
+                "AND (Place.Resort =" + sqlresort +
+                "AND (Place.Skiresort =" + sqlskiresort +
+                "AND (Place.Active =" + sqlactive +
+                "AND (Place.Historical =" + sqlhistorical +
+                "AND (Country.Dangerous =" + sqldangerous +
+                "AND (Country.Exotic =" + sqlexotic+
+            "AND (" + sqlvisa +
                      " AND (" + sqlcountry + " Continent.Idcontinent = 7)";
 
             sqlcountry = "";
