@@ -39,7 +39,7 @@ namespace TravelNew
             var result = client.DownloadString(string.Format("http://api.openweathermap.org/data/2.5/weather?q={1}&units=metric&appid={0}", APIkey, APICity));
 
             var data = JsonConvert.DeserializeObject<WeatherData>(result);
-            latitude =data.Coordin.Latitude;
+            latitude = data.Coordin.Latitude;
             longitude= data.Coordin.Longitude;
             speed_wind = data.WindInfo.Speed;
             temp = data.Main.Temperature;

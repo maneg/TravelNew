@@ -8,16 +8,46 @@ namespace UnitTests
     public class UnitTest1
     {
         [TestMethod]
-        public void InfoPlaceTest()
+        public void ShowQueryTest()
         {
             //arrange
-            int selectedid = 31;
+            int selectedid = 5;
+            string countryexpect = "Австрали";
+            string placenameexpect = "Сидней";
+            string capitalexpect = "Канбера";
             //act
             ShowQuery sq = new ShowQuery();
             sq.ShowPlace(selectedid);
+            string countryresult = InfoPlace.country;
+            string placenameresult = InfoPlace.placename;
+            string capitalresult = InfoPlace.capital;
+
             //assert
-            Assert.Fail(); 
+            Assert.AreEqual(countryexpect, countryresult);
+            Assert.AreEqual(placenameexpect, countryresult);
+            Assert.AreEqual(capitalexpect, countryresult);
         }
+
+        //[TestMethod]
+        //public void MainWindowTest()
+        //{
+        //    //arrange
+        //    int selectedid = 5;
+        //    string countryexpect = "Австрали";
+        //    string placenameexpect = "Сидней";
+        //    string capitalexpect = "Канберра";
+        //    //act
+        //    ShowQuery sq = new ShowQuery();
+        //    sq.ShowPlace(selectedid);
+        //    string countryresult = InfoPlace.country;
+        //    string placenameresult = InfoPlace.placename;
+        //    string capitalresult = InfoPlace.capital;
+
+        //    //assert
+        //    Assert.AreEqual(countryexpect, countryresult);
+        //    Assert.AreEqual(placenameexpect, countryresult);
+        //    Assert.AreEqual(capitalexpect, countryresult);
+        //}
 
     }
 }
